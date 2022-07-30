@@ -10,12 +10,10 @@ public class Food {
 		this.maker = maker;
 		this.price = price;
 	}
-	
 	// 생성자 인스턴스값 복사 
 	public Food(Food f) {
 		this(f.name,f.maker,f.price);
 	}
-	
 	public String getName() {
 		return name;
 	}
