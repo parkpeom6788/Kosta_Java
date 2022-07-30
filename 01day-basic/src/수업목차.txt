@@ -1,0 +1,44 @@
+**전체 커리큘럼**
+22.7.27~22.12.29까지 전체 과목
+
+Java SE , UML ( 4주 ) 
+Database ( Oracle ) , JDBC , DB Modeling ( ERD, 정규화 ) 2주
+HTML5 , CSS , Javascript 
+Servlet&JSP ( MVC , FrontController Design Pattern 등 ) 4주 
+2달반
+Project 관련 준비 ( 애자일 개발 방법론 , 형상관리 git 등)
+Semi Project 2주 
+Framework 4주 
+( Spring IOC/DI , AOP , SpringMVC , jUnit , MyBatis , jQuery , maven , Spring Boot , Thymeleaf , REST , JSON , Cloud(아마존) ) 
+Final Project 4주 
+----------------------
+Java SE 과목 목차 4주 - 기초 구문 
+Java 기본 동작원리 
+OOP ( 객체지향 프로그래밍 , Object , Class , attribute , operation )
+Java 기초 문법 ( variable 변수 , method 기능 ,  constructor 생성자 )
+객체 지향 주요 개념 : 응집도(cohesion)와 결합도(coupling) , Encapsulation 
+Java Data Type ( 어떤 정보를 담을 것인가 ? ) 
+객체 초기화 단계 
+Java Memory 구조 (Stack , Heap , Meta Space 영역 ) 
+제어문 ( 조건문 if , switch 와 반복문 for , while , do while  ) 
+-- 4일
+UML - Class Diagram , relationship
+배열 Array 
+mini project : 작은걸 2시간 
+상속 Inheritance
+오버로딩과 오버라이딩
+다형성 Polymorphism 
+static, final , abstract , interface
+mini project  
+String  /  StringBuffer  /  StringBuilder 
+Collection ( Set , list , Map , Generic 등) - 자료구조
+mini project 작은걸 1~2시간 
+IO 입출력 
+Thread - WAS 의 동작원리에 도움이 많이 됨 
+Network - 통신 , 채팅 
+mini project 
+
+
+
+
+

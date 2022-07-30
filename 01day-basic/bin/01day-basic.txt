@@ -1,0 +1,36 @@
+**1day**
+
+- 개발환경설정 
+	JDK 다운로드 및 설치 : JDK => Java Development Kit 자바 개발 도구 
+										JRE => Java RunTime Environment 자바 실행 환경 
+										JDK 설치 시 JRE 가 들어가 있다.
+										JVM => Java Virtual Machine 자바 가상 기계 
+										JDK를 설치하면 Compiler 및 JRE , JVM 이 함께 설치된다.
+										JDK > JRE > JVM 이 있다. 
+	JVM 역할 - 메모리 관리 - 가비지컬렉터
+	
+	자바 구동 원리 
+	HelloWorld.java == compile ==> HelloWorld.class (기계가 알아들을수있는 기계어 저급언어)  ==> runtime ==> 실행결과 
+								   javac	HelloWorld.java																   				  java HelloWorld
+									자바 컴파일러																							 JVM이 class를 번역해 실행
+	: 자바 개발자가 HelloWorld.java 를 작성하고 컴파일 명령하면 
+	컴파일러가 동작되어 HelloWorld.class 를 생성 ( 기계어 ) 
+	자바 가상 기계 (JVM) 이 생성된 HelloWorld.class 파일을 해석해(인터프리터) 실행 결과를 보여준다.  - runtime 					
+									
+	IDE(통합 개발 환경 툴) 인 Eclipse 를 다운로드 , 설정 
+	 	 																		
+	**2day 수업 주요 목차**
+	OOP 객체 지향 프로그래밍 
+	Object
+	Class
+	속성 ( attribute or variable )
+	기능 ( operation or method ) 
+	class , Variable , Method 문법
+	Encapsulation 캡슐화 개념 
+	setter / getter 
+	Constructor 생성자 문법 
+	
+	
+	
+	
+	

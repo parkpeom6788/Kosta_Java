@@ -1,0 +1,130 @@
+   	**2day 수업 주요 목차**
+   	OOP 객체 지향 프로그래밍 
+   	Object 
+   	Class 
+   	속성 ( attribute or variable ) 
+   	기능 ( operation or method ) 
+   	Class , Variable , Method 문법 
+   	접근제어자(access modifier) 
+  
+   
+    --------------------------------------------------------------------------
+    - 자바 언어의 특징
+       객체 지향 언어이다 (파이썬,C#,자바스크립트)
+    - 플랫폼에 독립적이다. (운영체제와 관계없이 한번 작성한 자바프로그램은 어디서나 동일한 동작을 한다  => 운영체제별 JVM 이 설치 ) 
+    						     	 ("Write Once Run Anywhere")
+    JVM은 운영체제에 종속적 , 자바는 운영체제에 독립적(동일하게동작)
+	JVM 자동 메모리 관리  (JVM이 담당 => 필요없는 정보를 제거 garbage collection  쓰레기 수집 GC )
+	- 소프트웨어 개발 생명 주기(Sofrware Development Life Cycle : SDLC)    
+		요구분석 -> 설계 -> 구현 -> 테스트 -> 운영(유지보수)
+    - 소프트웨어 개발 방법론 
+    	Waterfall 폭포수 모형  vs Agile 애자일 
+    폭포수모형 : 완벽하게 끝내야지 다음 작업을 수행함  단점 : 고객의 요구사항을 분석하기 힘듬 
+    Agile 방법론 : 반복 하고 검증하는 개발 , Agile 기민한
+    소프트웨어 개발방법론 중의 하나로써 고객의 변화되는 요구사항에 신속하고 기민하게 대응 반복 점증하는 개발 방식을 말한다. => 애자일 실천 : 칸반 
+    
+    Agile 방법론 : 칸반(Kanban) , 페어 프로그래밍 
+    칸반(kanban) : ToDo  Doing  Done 으로 나뉨 
+    페어프로그래밍 : 하나의 컴퓨터에서 두 사람의 프로그래머가 작업하는 방법
+    
+    - 객체 지향 ( Object Oriented )
+   		시스템의 기본 단위를 객체로 상정하고 
+   		객체와 객체의 관계를 중심으로 분석,설계,구현,운영 하는 프로그래밍 원리를 객체 지향이라고 한다.
+    - 객체 ( Object)
+    시스템의 기본 단위
+    속성(attribute or variable)과 기능(operation or method)으로 구성
+    속성 : 객체의 정보를 저장하는 영역 ( ex - 축구선수객체의 선수명,등번호,신체정보,골수 등 )
+    기능 : 객체의 동작을 정의하는 영역 ( ex - 슛하다, 달리다, 패스하다 )
+    
+    - 클래스 ( class )
+    	객체를 생성하기 위한 틀 
+    	
+    	클래스는 붕어빵틀 , 객체는 붕어빵  ex2 - 하나의 축구선수틀(class)로부터 다수의 축구선수객체(object)생성 될 수 있다.
+    	
+    - 클래스와 객체의 관계
+    	클래스는 틀 , 객체는 실제 ( 클래스는 붕어빵 틀이고 , 객체는 붕어빵이다 )
+    	실세계의 객체로부터 추상화하여 개발자가 정의한 클래스로부터 실재화된 정보(instance)를 객체 라고 한다.
+    
+    - Class , Variable ( 변수 ) , Method ( 기능) 기본 문법 basic syntax 
+    
+    class 의 예 => Person 객체 생성을 위한 틀 
+    
+    public class Person {
+    	// Person 이라는 객체의 틀 만듬
+    }
+    
+    variable 의 예 : Person 객체의 속성정보 name 과 money를 저장하기 위한 영역 
+    
+    variable : 메서드나 생성자 차원에서 정의되는 지역변수(local variable)
+    				객체의 속성정보를 저장하는 인스턴스변수(instance variable) 또는 객체의 멤버변수가 있다.
+    				또한 클래스 변수가 있다. ( 이후 static 에서 공부 예정)
+					    				
+    public class Person {
+    	String name;
+    	int money;
+    }
+    method 의 예 : Person 객체의 동작을 정의한 eat() 메서드 
+     public class Person {
+    	String name;
+    	int money;
+    	public void eat() {
+    		// 동작 정의 
+    	}
+    }
+	method 기본 문법	
+	접근제어자 리턴타입 메서드명(매개변수리스트) {
+			구현부
+	}
+	void : 메서드의 리턴값이 없을 때 명시하는 자바 예약어
+	method : 객체 기능 
+	ex ) ATM  입금하라 public void  void  deposit(int money) : 리턴해주는것이 없다 , 메소드명(매개변수=지역변수)
+	사용자 로부터 반환값이 없을때 void 
+	Test User 
+	
+	출금하라 
+	public int withdraw(int money) { // 반환값이있는 리턴타입을 적어준다
+		
+		return money;
+	}
+	
+	return keyword(예약어) : 호출한 사용자 측(client) 으로 정보를 반환할 때 사용하는 자바 키워드 
+	
+	리턴 예 )
+	public int plus(int i,int j){ // 호출한 쪽으로 반환하는 데이터 타입 int 를 void 대신 명시한다. 
+		return i + j;
+	}	
+	- 접근 제어자 access modifier : 접근의 범위를 정해준다. 
+	:접근의 범위를 설정 => class , instance variable , class variable ,  method 
+	public > protected >  default(friendly) > private 
+	
+	public : 다른 패키지에서도 접근 가능 , 어디서나 접근가능
+	protected : 동일한 패키지내에서만 접근 가능하나 (상속 관계)에 있을때는 다른 패키지에서 접근가능
+	default(friendly) : 동일한 패키지내에서만 접근 가능 
+	private : 다른 클래스에서는 접근 불가 즉 , 동일한 클래스 내에서만 접근 가능 
+			 
+	이후 과정에서 상세히 공부할 예정 
+	
+	**3day 주요 목차**
+	Encapsulation 개념 
+   	setter / getter 
+   	Constructor 생성자 문법 
+   	UML 중 Class Diagram
+	Java Data Type  - 기본형 , 참조형 
+    
+    
+    
+    
+     
+    
+    
+    
+    
+    	
+     
+     
+   
+     	 
+    
+       
+       	
+    
