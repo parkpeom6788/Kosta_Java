@@ -1,0 +1,52 @@
+**5day 주요목차**			
+- 객체 초기화 단계 ( 생성되면서 어떤 초기화 단계가 일어나는지 - 묵시적 초기화 명시적 초기화 
+- 변수의 종류와 특징  / 자바 메모리 구조(간단하게 볼것임) 
+- Relationship : UML의 Class Diagram => association(일반), , aggregation(소유) , composition(구성)
+							Class Diagram 공부와 그에 따른 Java Program을 구성  		 
+- Array ( 배열 ) 
+---------------------------------------------------------------------------------------------------------
+- for loop review : step1 구구단 예제
+
+- 객체 초기화 단계
+	: 객체 생성시 초기화는 다음과 같은 단계를 거친다 ( 이후 상속 공부시에 더 추가될 예정 )
+	1 ) 인스턴스 변수의 기본 초기화 ( 0 or false or null ) 
+	2) 인스턴스 변수의 명시적 초기화  = 이퀄했을때 
+	3) 생성자에 의한 초기화 
+	step2 예제에서 확인해본다 
+- 변수의 종류와 특징  / 자바 메모리 구조(간단하게 볼것임)
+	변수의 종류와 특징
+	1) 인스턴스 변수 instance variable : 클래스 단위에서 선언 , 객체의 속성 정보를 저장 , Heap 메모리 영역에 저장
+							선언만 해도 기본 초기화 ( 0, 0.0 , false , null ) - JVM이 초기화 해줌 
+	2) 지역 변수 local variable : 생성자 또는 메서드 영역에서 선언되고 초기화 됨 
+											특정 기능을 위해 일시적으로 사용된 후 메모리에서 해제
+											Stack 메모리 영역에 저장 
+											선언 후 명시적 초기화가 필요 (ex - int i = 1 ); - 할당으로 초기화 
+											지역변수는 자신의 선언된 실행영역 { } 내에서만 사용이 가능하다  
+	3 ) 클래스 변수 class variable : static variable , class 의 정보를 저장할 때 사용 
+								meta space 메모리 영역에 저장 ( 이후 공부 예정 )	
+																	
+	자바 메모리 구조 
+	Stack : 일시적으로 사용되는 Local Variable 지역변수 정보가 저장되는 영역 (Last In , First Out : LIFO)
+	Heap : 객체의 속성 정보 ( instance variable ) 가 저장되는 영역 , 참조할 수 있는 주소값이 JVM에 의해 생성되고 관리됨
+	Meta Space : class 의 정보가 저장되는 영역 , static 즉 class variable 정보가 저장됨
+	
+	
+	 - Relationship : UML의 Class Diagram => association(일반),  aggregation(소유) , composition(구성-합성)
+							Class Diagram 공부와 그에 따른 Java Program을 구성  
+									 
+		association(일반) >  aggregation(소유) > composition(구성-합성)
+		association : usa a 관계 ex ) 사람이 렌트카를 이용하다
+		aggregation : has a 관계  ex ) 고객이 스마트폰을 소유하여 이용하다
+		composition : consist of 관계 ex) 자동차는 엔진과 여러 부품으로 구성되다  사람은 뇌를 가지고 있다 
+		
+	** 6day 주요 목차 **
+	복습 step2 ~~~ step7
+	- composition
+	
+	- Array ( 배열 )
+	
+	- Inheritance ( 상속 ) => 예습   java 상속 예제 검색해서 예습 해오기 
+ 	
+	
+	
+	
