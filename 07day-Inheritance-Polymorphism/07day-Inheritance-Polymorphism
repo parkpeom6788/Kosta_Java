@@ -1,0 +1,76 @@
+Java se - 개발환경 jdk > jre > jvm   - 해석 실행(인터프리터) , 메모리관리(stack(지역) , heap(객체)
+객체지향 - 속성 - 필드 
+	  기능 - 메서드
+	   틀 - 클래스 - package 
+		      - import 
+		      - class
+		      - instance variable
+		      - extends
+		      - 생성자(객체초기화작업) 
+		      - method
+	 데이터타입 - 기본형 - 정수실수논리
+		    -  참조형 - 클래스
+	 변수 - 지역변수 L v - 명시적초기화 - stack - LIFO 
+	        -  인스턴스 변수 i v- 기본초기화 - heap
+	 static - 클래스변수 c v - metaspace
+제어문 - 조건문 - if , switch
+          - 반복문 - for , while , do while
+프로그래밍기법 - 오버로딩 - 생성자 , 다양한 매개변수
+모듈 - 응집도(높게) , 결합도(낮게) - 캡슐화(은닉) , 상속 , 다형성
+관계 - relation 다음장 
+Array 배열 - 다수데이터를 하나로 저장관리
+
+relation ship - association : use a , aggregation : has a , compoistion : consist of 
+		 generalization : extends is a  
+		 
+		 
+		** 7일차 주요목차 **
+		- Inheritance 
+		
+			access modifier : protected 
+			super() -> 상속 관계 상에서 객체가 생성되는 원리 
+			method overriding ( 메서드 오버라이딩 ) * 예습 * 
+			
+			public : 다른 패키지에서 접근가능 proetected : 같은패키지 내에 or 다른 패키지 상속관계 
+
+--------------------------------------------------------------------------------------------
+	-	Inheritance : 상속
+							부모 멤버(속성,기능)를 물러받아 사용
+							계층 구조 형성을 통한 다형성(Polymorphism) 적용 환경을 제공 
+	상속(Inheritance) 특징
+	: 자바는 단일 상속이다.
+	is a relationship / generalization   사람은 동물이다  개는 동물이다.
+		부모의 private member는 상속받더라도 클래스 다르므로 접근 불가 
+		extends keyward를 이용해 상속받는다
+		super keyword 1. super.member(속성,기능) : 부모 객체를 가르키는 키워드
+								2. super() : 부모 생성자를 호출한다 
+										부모 클래스에 기본 생성자가 없는 경우에는 
+										자식 클래스에서 생성자를 명시한 후 
+										부모 생성자의 매개변수에 맞는 정보를 super(정보)
+										명시하여 호출하게 한다 								 
+										super()는 반드시 생성자 첫 라인에 위치해야 한다
+		상속 관계에서 자식 객체를 생성할 경우 super() 원리에 의해
+		부모객체 -> 자식객체 순으로 생성된다. 
+		
+		- Overriding : 메서드 오버라이딩 
+								상속받은 부모 메서드를 자신에 맞게 구현부를 재정의 
+		문법
+				부모 메서드의 리턴타입,메서드명,매개변수는 같아야 한다 
+				접근제어자는 부모 메서드보다 좁아지면 안된다.  부모 - protected ,  자식 - protected , public 
+								
+		- java.lang.Object : 모든 자바 클래스의 부모 클래스 (superclass)
+									최상위 부모 클래스						
+									모든 자바 객체는 java.lang.Object 가 제공하는 멤버를 물러받아 가지고 있다 
+									toString() - > 객체의 주소값을 반환하는 메서드
+									주로 자식 클래스(모든 자바 클래스)에서 오버라이드하여 
+									주소값 대신 자신의 실제 속성 정보를 반환하는 용도로 사용
+									 
+		** 8일차 주요목차 **
+		Polymorphism ( 다형성 )  *예습* 
+		Object Casting
+		instanceof 연산자 			
+		java.lang.Object		 
+		
+				
+		
+			
