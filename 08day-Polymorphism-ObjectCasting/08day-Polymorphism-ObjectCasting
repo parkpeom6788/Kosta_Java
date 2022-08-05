@@ -1,0 +1,60 @@
+		** 8일차 주요목차 **
+		Polymorphism ( 다형성 )  *예습* 
+		Object Casting
+		instanceof 연산자 			
+		java.lang.Object	
+-------------------------------------------
+- Polymorphism
+	: 다형성
+		다양한 형태를 가지는 성질
+		*하나*의 소통방식으로 *다양한* 객체들이 각자의 방식으로 *동작*하는 성질
+ 		
+ 	객체 지향 주요 개념 : Cohesion와 Coupling, Encapsulation , Inheritance , Polymorphism
+ 	
+ 	Polymorphism 다형성 지원을 위해서는 계층 구조 형성이 필수적이다 
+ 	( Inheritance 상속은 부모 멤버(속성,기능)을 물러받아 재사용 ,
+ 	 계층구조 형성 hierachy을 통한 다형성 적용 환경을 제공 )
+ 	 => 상속계층구조를 기반해 다형성이 적용될 수 있다 
+ 	
+ 	부모 타입의 변수에 다양한 자식 객체를 참조할 수 있다. => 다형성의 특징
+ 	Animal a1 = new Person();
+ 	Animal a2 = new Rabbit();
+ 	-----------------------------------------
+ 	main() {									Service 아래와 같이 하나의 메서드로 다양한 자식 객체를 처리 
+ 		service.add(new Person); --> public void add(Animal a) { a.eat(); // 오버라이드된 현재 자식객체 메서드 실행 } 
+ 		service.add(new Rabbit);
+ 	}	
+ 	- Object Casting( Object Down Casting )
+ 		부모 타입의 변수로 자식 객체를 참조할 경우
+ 		부모로부터 상속받은 멤버(속성,기능) 와 오버라이드한 메서드는 바로 접근 가능하지만
+ 		자식의 독자적인 멤버(속성,기능)는 접근이 불가능하다
+ 		
+ 		참조변수가 부모타입이기 때문이다. 
+ 		ex) Animal a = new Person();
+ 			a.study(); // study메서드는 Animal에는 존재하지 않고 Person에만 존재하는 독립적 멤버
+ 			위 코드는 컴파일 에러가 난다 
+ 			자식의 독자적 멤버에 접근하기 위해서는
+ 			Object Down Casting 이 필요하다
+ 			ex) ((Person))a).study()
+ 	
+ 		- instanceof 연산자 : 객체의 타입을 비교하는 연산자 
+				is a relationship 이 적용되는 true가 반환
+		Animal a = new Person();
+		ex )  sysout(a instanceof Person); // true   a객체가 Person 이냐 ? is a 관계
+				sysout(a instanceof Rabbit); // false			
+				sysout(a instanceof Animal); // true
+ 		
+ 		**9일차 주요목차**
+ 		-static 클래스변수
+ 		
+ 		- final
+ 		
+ 		- abstract *예습*
+ 		 
+ 		- interface *예습*
+ 		
+ 		복습 코드 : step8 예제 
+ 		복습 개념 : Object Oriented , Encapsulation , Inheritance , Polymorphism
+ 						Overloading 과 Overriding
+ 		
+ 											
