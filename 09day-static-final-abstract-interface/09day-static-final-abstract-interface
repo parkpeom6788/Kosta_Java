@@ -1,0 +1,92 @@
+** 9일차 주요 목차 **
+- static
+- final
+- abstract
+- java.lang.String 
+--------------------------------------------
+- static : 정적인 멤버 , 클래스의 멤버를 정의할때 사용
+				별도의 객체 생성없이 클래스로 접근해 사용한다
+				static variable ( or class variable ) 은 class loading 시점에 meta space 메모리 영역 하나의 공간에 저장
+				instance variable ( object member variable ) 은 runtime 시 객체 생성 heap 메모리 영역에 
+				각각의 객체의 공간에 저장 
+				
+				static은 주로 공유할 정보에 명시한다 
+				
+				static <-> dynamic (  동적 객체 생성  )
+				클래스 로딩 시점에 메모리(meta space)에 적재
+
+				컴파일 후 자바 프로그램 실행 단계는 아래와 같다
+				1) 클래스 로딩 - 클래스 정보(붕어빵틀정보)와 함께 static member 메모리(meta space 메모리 영역) 미리 적재
+				2) 코드 검증 (Byte Code Verifier )
+				3) 실행(runtime) - main 실행 -> 객체 생성 heap 메모리 영역에 객체가 적재    
+				
+				static 과 non-static 접근 
+				: static 에서 non - static 으로 접근하기 위해서는 반드시 객체 생성이 필요
+				non-static 에서 static 으로 접근은 바로 가능 ( TestStatic2 , TestStatic3 예제 확인 ) 
+		
+		- Java Memory
+		Stack 영역 : local variable 정보가 저장되는 영역 , LIFO (Last In , First Out)
+		Heap 영역 : Object의 instance variable 정보가 저장되는 영역 
+		Meta space 영역 : class 의 meta data ( package , class , method .. ) 가 저장되는 영역
+									static member 정보가 저장된다 , static이 아닌것은 개별 객체가 가지고 있어야 한다. 
+		- filed : field 중 constant(상수) , method , class 에서 명시할 수 있는 제어자
+		
+		1 ) constant(상수) : 재할당 불가 
+									private final String MY_ID = "javaking";
+								     My_ID = "angel"; // error 재할당 불가
+									
+		2 ) method : 자식 클래스에서 메서드 오버라이딩 불가 	
+									public final void wait() {} 이 메서드는 자식에서 재정의 불가 
+		3 ) class : subclassing 불가 , final class 는 상속불가 
+- abstract 
+	: 클래스와 메서드 명시될 수 있음 
+	  	추상클래스 및 추상 메서드 정의하기 위해 사용
+	  	abstract class는 직접 객체화 될 수 없고 부모 역할에 집중
+	  	abstract method는 자식 클래스에게 구현을 강제한다.
+	  	
+	  	Animal - abstract 
+	  	Animal a = new Animal(); // error abstract class는  직접 객체화 할수 없다 -> 부모 역할 에 집중
+		  	
+	  	1) abstract class : class 앞에 abstract 로 명시된 클래스 
+	  											부모 클래스의 ★역할★ 에 집중 
+	  											new 를 이용해 직접 객체 생성 불가 
+	  											but 자식 클래스에서 super() 로 생성되는 것은 가능 
+	  	2) abstract method : 구현부가 존재하지 않고 자식 클래스(sub class) 에게 구현을 강제 
+	  		ex) 부모가 자식에게 공부좀해라 										
+	  
+	  싱글톤 패턴 - mvc할때 배울것임
+	- Design Pattern : 소프트웨어 설계 패턴 
+								소프트웨어 설계 단계에서 공통적으로 발생하는 문제에 대한 재사용 가능한 해결 방한을 정형화시킨 것 
+	 ex ) 템플릿메서드 디자인패턴 , 싱글톤 패턴 , MVC디자인패턴 , 프론트컨트롤디자인패턴 , 프록시 디자인 패턴 							
+	
+	Template Method Design Pattern  - protected , protected abstract , public 
+	: 부모 클래스에서 문제해결방안(작업 알고리즘)의 구조 or 뼈대(틀)를 정의하고
+	  자식 클래스에서 재사용 하게 하는 설계패턴 
+	ex) 피자 생성에 필요한 작업 공정 ( prepare() , topping() , bake() , cutting() , boxing())
+		의 구조를 makePizza() 라는 템플릿 메서드를 정의해 하위 클래스에게 물려준다
+		또한 topping()은 부모 차원에서 만들어서 물려줄 수 없으므로 abstract method로 처리해
+		반드시 하위 클래스에서 구현하도록 강제 시킨다
+	템플릿 메서드 디자인 패턴은 개발  생산성 향상 및 작업 (공정의 표준화) 에 기여한다 
+	
+	- java.lang.String(불변)
+		: 문자열 담당 클래스 
+		불변 즉 한번 생성된 String 문자열은 변경되지 않고 새로 만들어진다
+		동일한 문자열이 여러 곳에서 반복되어 사용할 때 적합  
+		문자열 상수 영역(literal pool)에 저장되어 공유
+		만약 String 의 메서드 이용해 문자열을 변경 하면 내부적으로 
+		문자열 자체가 변경되는 것이  아니라 (새로 생성)된다 	
+		
+	- java.lang.StringBuilder(가변)
+	: 문자열 담당 클래스 
+		가변의 특성 즉 StringBuilder 문자열을 변경하면 자체가 변경된다 ( String 과 차이 ) 
+		(문자열 자체)가 자주 변경될 때 적합 
+	ex ) sql문에서 자주바뀌는 문장 	
+
+1. 코딩을 읽어보고 이해 -> 왜쓸까 -> 물어보면 머라 대답하지
+	
+**10일차 주요목차**
+- interface ( 상속과 다형성 연관 ) 
+- java.util.Collection : Set , List , Map  -> 화요일 수요일까지 이어짐 	
+		
+		
+		
