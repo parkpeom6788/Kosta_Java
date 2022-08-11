@@ -1,0 +1,25 @@
+11day-List-Generic
+
+** 11일차 주요목차**
+java Collection
+List 계열의 ArrayList
+Generic
+
+mini project : 분석 ,설계 , 구현
+---------------------------------------
+
+java.util.Collection : 자바 자료 구조의 최상위 인터페이스
+
+set interface : 중복을 인정하지않는다
+	class TreeSet : 중복 인정하지 않음 , 정렬 기능
+	class LinkedHashSet : 중복 인정하지 않음 , 순서 보장 
+List interface : 인덱스로 요소를 관리한다.  
+						class ArrayList : index로 요소를 관리 , 검색에 용이
+						class LinkedList : index로 요소를 관리 , 삽입 , 삭제 용이 
+Generic : 미리 타입을 지정
+				요소 타입의 안정성을 보장
+				객체 캐스팅 절차를 감소 
+										
+										
+										
+										
