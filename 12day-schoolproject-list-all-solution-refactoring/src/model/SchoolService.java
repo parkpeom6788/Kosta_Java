@@ -1,0 +1,24 @@
+package model;
+
+public interface SchoolService {
+
+	void addMember(Member member);
+
+	void printAll();
+
+	void deleteMemberByTel(String tel); // method
+
+	void updateMember(Member member); // method 
+	
+	/**
+	 * SchoolServiceVer2 에 새롭게 추가된 메서드
+	 * tel에 해당하는 list 요소의 position을 반환한다
+	 * 만약 tel에 해당하는 list의 구성요소가 없다면 -1 반환 
+	 * @param tel
+	 * @return 
+	 */
+	default int findIndexByTel(String tel) {
+		return -1;
+	}
+	Member findMemberByTel(String tel);
+}
