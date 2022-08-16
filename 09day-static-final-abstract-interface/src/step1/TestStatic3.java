@@ -6,10 +6,11 @@ package step1;
 public class TestStatic3 {
 	String name; // object member variable , instance variable 
 	static String name2; // static variable , class member variable 
+	
 	// method
 	public  void test1() {
 		System.out.println("object member method test1");
-	}
+	}	
 	// static method
 	public static void test2() {
 		System.out.println("class member method test2");

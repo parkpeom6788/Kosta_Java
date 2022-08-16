@@ -1,7 +1,5 @@
 package step3;
-
 public class TestReferenceArray1 {
-	
 	public static void main(String[] args) {
 		// 배열 선언
 		Person[] pa;  
@@ -19,6 +17,5 @@ public class TestReferenceArray1 {
 		for(int i = 0 ; i < pa.length; i++) {
 			System.out.println(pa[i].getName() + " " + pa[i].getAge());
 		}
-		
 	}
 }

@@ -1,0 +1,6 @@
+package step3;
+
+public class Friend {
+	private String name;
+	private int age;
+}

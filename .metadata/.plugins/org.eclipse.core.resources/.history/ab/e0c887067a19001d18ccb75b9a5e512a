@@ -1,0 +1,12 @@
+package step1_test;
+
+import java.util.ArrayList;
+
+public class TestList1 {
+	public static void main(String[] args) {
+		ArrayList<String> list = new ArrayList<String>();
+		list.add("아이유");
+		list.add("손흥민");
+		
+	}
+}

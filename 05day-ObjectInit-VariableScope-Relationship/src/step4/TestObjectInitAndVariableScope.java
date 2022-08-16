@@ -9,7 +9,7 @@ public class TestObjectInitAndVariableScope {
 		Friend f = new Friend("아이유",30);
 		FriendService service = new FriendService();
 		
-		f = service.test1(f);
+		//f = service.test1(f);
 		System.out.println(f.getName()); // 아이유
 		System.out.println(f.getAge()); // 30 
 		System.out.println("***test1***");

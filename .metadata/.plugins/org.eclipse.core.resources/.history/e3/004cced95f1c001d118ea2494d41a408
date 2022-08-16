@@ -1,0 +1,22 @@
+package ch11;
+
+import java.util.Arrays;
+
+public class Ex11_7 {
+	
+	public static void main(String[] args) {
+		
+		String[] strArr = {"cat","Dog","lion","tiger"};
+		
+		Arrays.sort(strArr); // String 클래스에서 Comparable<String> 이 구현되어 있다
+		System.out.println("strArr = " + Arrays.toString(strArr)); // 오름차순 
+		
+		Arrays.sort(strArr, String.CASE_INSENSITIVE_ORDER); // 대소문자 구분안함
+		System.out.println("strArr = " + Arrays.toString(strArr));
+		
+		Arrays.sort(strArr, new Descending()); // 역순 정렬
+	}
+}
+class Descending {
+		
+}

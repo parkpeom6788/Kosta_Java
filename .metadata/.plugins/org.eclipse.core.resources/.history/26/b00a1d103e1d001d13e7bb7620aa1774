@@ -1,0 +1,16 @@
+package step6;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class TestQueue {
+	
+	public static void main(String[] args) {
+		
+		// Queue 자료구조의 특징 : FIFO (First In , First Out) 
+		Queue<String> queue = new LinkedList<String>();
+		queue.add("상현씨 안뇽~");
+		
+		
+	}
+}

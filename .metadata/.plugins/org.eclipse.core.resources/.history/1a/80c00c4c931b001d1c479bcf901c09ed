@@ -1,0 +1,44 @@
+package main;
+
+import java.util.Scanner;
+
+public class Application {
+	private static Scanner sc;
+	private SchoolService service;
+	
+	public Application() {
+		sc = new Scanner(System.in);
+		serivce = new SchoolServiceImpl();
+	}
+	public static int printFunction() {
+		System.out.println("---------------------------------------------------------------------------------------------------------------");
+		System.out.println("1. 학생 정보 추가 | 2. 학생 정보 제거 | 3. 학생 정보 수정 | 4. 전교 1등 성적 출력 | 5. 전체 성적 출력");
+		System.out.println("---------------------------------------------------------------------------------------------------------------");
+		System.out.print("선택 > ");
+		int select = sc.nextInt();
+		return select;
+	}
+	public void choice() {
+		while(true) {
+			int select = printFunction();
+			// 학생 정보를 입력받은 후 성적표에 학생 성적 추가
+			if(select == 1) {
+				System.out.print("학번 : ");
+				int no = sc.nextInt();
+				
+				System.out.print("이름 : ");
+				String name = sc.next();
+				
+				System.out.print("점수 : ");
+				int score = sc.nextInt();
+				
+				Student student = new Student(no,name,score);
+				service.add(student);
+				
+			} else if(select == 2) {  // 삭제 
+				System.out.print("학번 : ");
+				
+			}
+		}
+	}
+}

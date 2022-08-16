@@ -10,14 +10,15 @@ abstract class Parent {
 class Child extends Parent {
 	@Override
 	public void study() { // 부모의 abstract method 는 반드시 구현해야 한다.
+		System.out.println("공부해!!!!");
 	}
 }
 public class TestAddstract2 {
 	public static void main(String[] args) {
 		//Parent p = new Parent(); // error , abstract class 는 직접 객체화 할 수 없음
 		Parent p = new Child();
-		System.out.println(p.money);
-		p.eat();
-		p.study();
+		System.out.println(p.money); // 200
+		p.eat(); // 먹다
+		p.study(); 
 	}
 }

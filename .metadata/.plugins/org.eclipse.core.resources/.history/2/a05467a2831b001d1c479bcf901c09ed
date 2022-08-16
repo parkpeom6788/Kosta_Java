@@ -1,0 +1,33 @@
+import java.util.Iterator;
+import java.util.Map.Entry;
+import java.util.TreeMap;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		TreeMap<Integer,String> map1 = new TreeMap<Integer,String>();
+		TreeMap<Integer,String> map2 = new TreeMap<>();
+		TreeMap<Integer,String> map3 = new TreeMap<>(map1);
+		TreeMap<Integer,String> map4 = new TreeMap<>() {{
+			put(3,"b");
+			put(1,"a");
+			put(5,"c");
+			put(2,"d");
+		}
+	};
+	// EntrySet
+	Iterator<Entry<Integer,String>> entrys = map4.entrySet().iterator();
+		while(entrys.hasNext()) {
+			Entry<Integer,String> entry = entrys.next();
+			System.out.println(" key : " + entry.getKey());
+			System.out.println(" value : " + entry.getValue());
+	}
+	// KeySet
+	Iterator<Integer> set= map4.keySet().iterator();
+		while(set.hasNext()) {
+			map4.get(set.next());
+			System.out.println();
+		}
+	}
+}

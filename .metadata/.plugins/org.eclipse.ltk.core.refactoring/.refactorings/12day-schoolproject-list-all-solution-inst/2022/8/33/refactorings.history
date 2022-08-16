@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;TestCaseFind.java&apos; to &apos;12day-schoolproject-list-all-solution-inst/src/test.step2&apos;&#x0D;&#x0A;- Original project: &apos;12day-schoolproject-list-all-solution-inst&apos;&#x0D;&#x0A;- Destination element: &apos;12day-schoolproject-list-all-solution-inst/src/test.step2&apos;&#x0D;&#x0A;- Original element: &apos;test.step1.TestCaseFind.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;test.step2" element1="/src&lt;test.step1{TestCaseFind.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1660353917459" units="1" version="1.0"/>
+</session>

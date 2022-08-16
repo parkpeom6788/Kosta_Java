@@ -1,0 +1,15 @@
+package step1_test;
+
+import java.util.ArrayList;
+
+public class TestList1 {
+	public static void main(String[] args) {
+		ArrayList<String> list = new ArrayList<String>();
+		list.add("아이유");
+		list.add("손흥민");
+		list.add("아이유");
+		System.out.println(list.size()); // 3 중복 허용
+		System.out.println(list.get(2));
+		System.out.println(list.get(1));
+	}
+}

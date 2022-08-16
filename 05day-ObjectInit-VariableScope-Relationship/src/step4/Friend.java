@@ -5,7 +5,7 @@ public class Friend {
 	private String name; 
 	private int age;
 	
-	public Friend() {}
+	public Friend() {} // 기본 생성자
 	public Friend(String name,int age) { // 매개변수 , 지역변수
 		this.name = name;
 		this.age = age;

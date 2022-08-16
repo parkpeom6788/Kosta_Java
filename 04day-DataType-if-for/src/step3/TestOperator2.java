@@ -17,7 +17,7 @@ public class TestOperator2 {
 	public static void main(String[] args) {
 		OperatorExam exam = new OperatorExam();
 		// & 와 && 연산자의 차이점 확인
-		// &연산은 모든 조건식 시랭하고 결과를 도출함
+		// &연산은 모든 조건식 실행하고 결과를 도출함
 		System.out.println("main : "+ (exam.test1() & exam.test2()));
 		// &은 앞에것이 false 여도 뒤에 것도 검사함
 		System.out.println("실행과정을 비교해 본다.");

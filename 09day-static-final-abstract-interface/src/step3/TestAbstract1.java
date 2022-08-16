@@ -1,6 +1,6 @@
 package step3;
 // abstract class 는 직접 객체화 될수 없고 부모 클래스의 역할에 집중  -> abstract class이면 상속을해서 쓰라는 것임 
-abstract class Parent { // 추상 클래스 = 부모로써 역할에 집중
+abstract class Parent { // 추상 클래스 = 부모로써 역할에 집중한다 
 	int money  = 100; 
 	public Parent() {
 		super(); // Object 생성
@@ -8,7 +8,8 @@ abstract class Parent { // 추상 클래스 = 부모로써 역할에 집중
 	}
 }
 class Child extends Parent {
-	Child() {super();
+	Child() {
+		super();
 		System.out.println("Child 객체 생성");
 	}  
 }

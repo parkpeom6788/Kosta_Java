@@ -1,0 +1,8 @@
+package step5.test;
+
+public class Product {
+	private int number;
+	private String name;
+	private String maker;
+	
+}

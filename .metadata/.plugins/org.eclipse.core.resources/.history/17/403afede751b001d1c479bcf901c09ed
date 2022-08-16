@@ -1,0 +1,14 @@
+package test;
+
+import model.SchoolService;
+import model.SchoolServiceImpl;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		SchoolService service = new SchoolServiceImpl();
+		
+		
+	}
+}

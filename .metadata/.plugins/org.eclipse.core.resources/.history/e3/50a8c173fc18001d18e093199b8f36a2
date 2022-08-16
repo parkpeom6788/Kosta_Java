@@ -1,0 +1,9 @@
+package Test;
+
+public class AirPlane extends Vehicle implements Flyer {
+
+	@Override
+	public void fly() {
+		
+	}
+}

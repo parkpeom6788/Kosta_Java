@@ -1,0 +1,8 @@
+package model;
+
+public interface SchoolService {
+	
+	public void addMember(Member member);
+	
+	
+}

@@ -1,10 +1,8 @@
 package step5.model;
 
 import java.util.ArrayList;
-
 import step5.test.Product;
-
-// add 하는곳 비즈니스서비스 클래스
+// add 하는곳 비즈니스 서비스 클래스
 public class ProductService {
 	// 하나로 계속써야되므로 인스턴스변수로 선언
 	private ArrayList<Product> list;  // 명시적 초기화
@@ -20,4 +18,5 @@ public class ProductService {
 			System.out.println(list.get(i).toString());
 		}
 	}
+
 }

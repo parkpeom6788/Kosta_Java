@@ -12,7 +12,7 @@ public class TestStatic6 {
 		System.out.println(s1+s2); // 문자열 이므로 19
 		// 정수형으로 변환
 		// parseInt 메서드는 static 이므로 클래스명.멤버 메서드로 접근
-		int i = Integer.parseInt(s1);
+		int i = Integer.parseInt(s1); // 문자열을 정수로 
 		int j = Integer.parseInt(s2);
 		System.out.println(i+j); // 정수 연산 결과 10
 		

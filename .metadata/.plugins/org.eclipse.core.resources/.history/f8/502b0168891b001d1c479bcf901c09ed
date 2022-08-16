@@ -1,0 +1,7 @@
+
+public class MultiThread extends Thread {
+	
+	public MultiThread(String threadName) {
+		this.setName(threadName);
+	}
+}

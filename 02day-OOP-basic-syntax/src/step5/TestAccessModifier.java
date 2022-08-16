@@ -15,6 +15,5 @@ public class TestAccessModifier {
 //		System.out.println(c.model3);
 		// private 이므로 접근 불가
 //		System.out.println(c.model4);
-		
 	}
 }

@@ -1,0 +1,8 @@
+package step5.test;
+
+// 상품정보들을 관리하고 제어하기 위한 클래스 
+public class TestProductService {
+	public static void main(String[] args) {
+		ProductService service;
+	}
+}

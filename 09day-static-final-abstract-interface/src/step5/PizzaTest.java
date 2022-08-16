@@ -1,6 +1,4 @@
 package step5;
-
-
 // 싱글톤 디자인 패턴
 class SingleTon {
 	private SingleTon singleton = new SingleTon();
@@ -12,13 +10,6 @@ class SingleTon {
 }
 // 템플릿메서드 패턴 
 abstract class  Pizza {
-	public void button() {
-		makedow();
-		topping();
-		gubda();
-		slice();
-		packing();
-	}
 	protected void makedow() {
 		System.out.println("도우만듬");
 	}
@@ -32,6 +23,13 @@ abstract class  Pizza {
 		System.out.println("포장");
 	}
 	protected abstract void topping();
+	public void button() {
+		makedow(); // 부모 실행
+		topping(); // 자식 실행
+		gubda(); // 자식 실행
+		slice(); // 자식 실행
+		packing(); // 자식 실행 
+	}
 }
 class Bulgogi extends Pizza {
 	@Override

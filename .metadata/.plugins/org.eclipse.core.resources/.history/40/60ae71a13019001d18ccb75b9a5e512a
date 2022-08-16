@@ -1,0 +1,12 @@
+package step3_test;
+
+public class Friend {
+	private String name;
+	private int age;
+	
+	public Friend() {
+	}
+	
+	
+
+}

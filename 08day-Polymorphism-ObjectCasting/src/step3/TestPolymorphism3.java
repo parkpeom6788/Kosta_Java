@@ -18,13 +18,8 @@ class ShoppingCart {
 	// 다형성을 이용하여 유지보수성을 향상 시킨다
 	public void put(Product p) {
 		System.out.println(p.toString() + "장바구니에 추가");
-	}
-
-	// 상품을 담음 
-	public void put2(Product[] p) {
 		
 	}
-	
 }
 public class TestPolymorphism3 {
 	public static void main(String[] args) {
@@ -32,7 +27,6 @@ public class TestPolymorphism3 {
 		cart.put(new NoteBook()); // 다양한 자식 객체를 전달할 수 있다.
 		cart.put(new SmartPhone());
 		cart.put(new Food());
-		
 		//----------------------
 	}
 }

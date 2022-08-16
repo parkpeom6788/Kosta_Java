@@ -1,0 +1,15 @@
+package main;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class GradeCard {
+	
+	// key = 학번 , value = 학생 정보(학번, 이름, 성적)
+	private Map<Integer,Student> gradeCard;
+	
+	public GradeCard() {
+		this.gradeCard = new HashMap<>();
+	}
+	
+}

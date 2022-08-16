@@ -1,0 +1,35 @@
+**13day 주요 목차**
+-Iterator
+- java.util.Map
+-------------------------------------------------------------------------
+java.util.Collection : 자바 컬렉션 계열의 최상위 인터페이스
+
+Set 계열 : 중복 인정하지 않는다
+	TreeSet : 정렬기능
+	LinkedHashSet : 입력 순서 보장 
+List 계열 : index로 관리
+				ArrayList : 검색에 용이
+				LinkedList : 삽입 , 삭제에 용이 
+Iterator : 반복자 
+					컬렉션 계열의 자료 구조체의 요소들을 반복 열거할 수 있는
+					표준화된 방법을 제공
+					( ex - 골뱅이캔, 땅콩캔, 맥주캔들의 여는 방법은 표준화되어 있음 )
+참고 ) Iterator Design Pattern : 반복자 설계 패턴 
+		각기 다른 구현방식의 자료구조체( 컬렉션 계열 객체 : Set 계열 , List 계열 ) 에 대해
+		요소에 대해 접근하여 제어할 수 있는 표준화된 방식( 인터페이스 )을 제공하는 디자인 패턴
+		접근에 제어하는 방식  /  자료구조구현 알고리즘 => 분리 => 캡슐화 
+			캔 따는 방식 			  /  번데기캔 , 골뱅이캔 
+
+java.util.Map Interface 
+	:	key 와 value 쌍으로 저장
+		요소에 대한 검색 작업이 용이
+		중복된 key값을 넣으면 업데이트 된다.
+	k - set  v - collection 되어있다
+	put(K key, V value)										
+	remove(K key)
+	keySet() -> 키값을 반환함
+	values() -> 										
+	TreeMap : key value 로 저장 , 제어 
+					정렬기능 
+	LinkedHashMap : key value 로 저장 , 제어 
+					입력 순서를 보장 

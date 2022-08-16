@@ -1,0 +1,8 @@
+package model;
+
+public class Student {
+	
+	private int no; // 학번
+	private String name;
+	
+}

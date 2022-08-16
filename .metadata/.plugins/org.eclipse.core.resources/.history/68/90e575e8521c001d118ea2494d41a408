@@ -1,0 +1,14 @@
+package ch11;
+
+import java.util.Collection;
+import java.util.TreeSet;
+
+public class Ex11_5 {
+	
+	public static void main(String[] args) {
+		Collection c = new TreeSet(); // Set은 Collection 의 자손
+		c.add("1");
+		
+		
+	}
+}

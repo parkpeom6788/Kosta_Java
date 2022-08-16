@@ -1,0 +1,25 @@
+package test;
+
+import model.Employee;
+import model.SchoolService;
+import model.SchoolServiceImplVer;
+import model.Student;
+import model.Teacher;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		SchoolService service = new SchoolServiceImplVer();
+		service.addMember(new Student("01012341234","김모씨","용인","100"));
+		service.addMember(new Teacher("01012341235","박모씨","성남","국어"));
+		service.addMember(new Employee("01012341236","이모씨","부산","사업부"));
+		service.addMember(new Student("01012341237","신모씨","경북","200"));
+		service.addMember(new Teacher("01012341238","윤모씨","대구","수학"));
+		
+		System.out.println("01012341238","윤모씨","대전","영업부 추가 하기 ");
+		service.addMember(new Employee("01012341238","윤모씨","대전","영업부"));
+		service.printAll();
+		
+	}
+}

@@ -1,0 +1,16 @@
+package step1;
+
+import java.util.ArrayList;
+
+// List 인터페이스 계열의 ArrayList 활용 예제
+// List 특징 : 인덱스로 요소를 관리한다. get(i)
+public class TestList1 {
+	public static void main(String[] args) {
+		ArrayList<String> list = new ArrayList<String>();
+		list.add("아이유");
+		list.add("손흥민");
+		list.add("아이유");
+		System.out.println(list.size()); // 3 중복 허용 
+		
+	}
+}

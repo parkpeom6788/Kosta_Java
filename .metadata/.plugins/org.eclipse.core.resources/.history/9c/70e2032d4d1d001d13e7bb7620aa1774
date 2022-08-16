@@ -1,0 +1,30 @@
+package step1;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+
+public class TestIterator1 {
+	public static void main(String[] args) {
+		LinkedHashSet<String> set = new LinkedHashSet<>();
+		set.add("아이유");
+		set.add("장기하");
+		set.add("아이유"); // 중복 인정되지 않음
+		set.add("이강인");
+		// Iterator 를 이용해 요소들을 반복 열거한다 
+		Iterator<String> it = set.iterator();
+		while(it.hasNext()) { // 다음요소가 있으면 true 없으면 false (커서가 이동함)
+			System.out.println(it.next()); // 다음 요소를 반환 
+		}
+		System.out.println("*******************");
+		ArrayList<String> list = new ArrayList<>();
+		list.add("당근");
+		list.add("오이");
+		list.add("상추");
+		
+		Iterator<String> it2 = list.iterator();
+		while(it2.hasNext()) {
+			System.out.println(it2.next());
+		}
+	}
+}

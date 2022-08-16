@@ -1,0 +1,14 @@
+package model;
+
+public class Employee extends Member {
+	
+	private String department;
+
+	public Employee(String department) {
+		super();
+		this.department = department;
+	}
+	
+	
+	
+}

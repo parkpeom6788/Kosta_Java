@@ -1,0 +1,8 @@
+package step5;
+
+public class TestStack {
+	
+	public static void main(String[] args) {
+		
+	}
+}

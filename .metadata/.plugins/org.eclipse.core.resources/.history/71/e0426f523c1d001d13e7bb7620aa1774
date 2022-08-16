@@ -1,0 +1,13 @@
+package step5;
+
+import java.util.Stack;
+
+public class TestStack {
+	public static void main(String[] args) {
+		// Stack 자료구조체의 특징을 파악하는 예제
+		Stack<String> stack = new Stack<String>();
+		stack.add("희망이");
+		stack.add("봄이");
+		stack.add("쿠키");
+	}
+}

@@ -1,0 +1,8 @@
+package step5.test;
+
+public classTest ProductService {
+	
+	public static void main(String[] args) {
+		ProductService service = new ProductService();
+	}
+}

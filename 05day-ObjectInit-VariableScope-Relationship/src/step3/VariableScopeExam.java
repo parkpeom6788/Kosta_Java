@@ -1,20 +1,20 @@
 package step3;
 
 public class VariableScopeExam {
-	int i; // instance variable
-	static int j; // class variable 이후 공부예정
+	int i; // instance variable 인스턴스 변수 
+	static int j; // class variable 이후 공부예정 -> 클래스 변수 
 	// 생성자 ctrl - space 
 	public VariableScopeExam() {
 //		int i; // local variable : 메서드 내에서 선언 
 		int i = 1;
 //		System.out.println(i); 에러 지역변수는 반드시 명시적 초기화가 필요하다 
-		System.out.println(i);  
+		System.out.println(i);  // 1
 	}
 	public void test1() {
 //		int i; // local variable
-//		System.out.println(i);에러 지역변수는 반드시 명시적 초기화가 필요하다
+//		System.out.println(i);에러  지역변수는 반드시 명시적 초기화가 필요하다
 		int i = 2;
-		System.out.println(i);
+		System.out.println(i); // 2 
 		System.out.println(this.i); // this를 이용한 인스턴스 변수 출력 
 	}
 	public void test2(int i) { // 매개변수 parameter 이자 local variable 

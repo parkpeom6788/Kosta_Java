@@ -1,0 +1,9 @@
+package model;
+
+public interface SchoolService {
+	
+	public boolean conTainsKeyCheck(int no);
+	public void add(Student student);
+	public void delete(int no);
+	
+}

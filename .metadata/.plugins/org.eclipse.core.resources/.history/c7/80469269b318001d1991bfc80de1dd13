@@ -1,0 +1,11 @@
+package step9_test;
+
+import java.util.Random;
+import java.util.TreeSet;
+public class LottoService {
+	
+	public HashSet createLottoNumber() {
+		
+		
+	}
+}

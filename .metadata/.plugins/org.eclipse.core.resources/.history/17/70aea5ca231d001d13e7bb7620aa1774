@@ -1,0 +1,8 @@
+package model.service;
+
+import java.lang.reflect.Member;
+import java.util.LinkedHashMap;
+
+public class SchoolService {
+	private LinkedHashMap<String,Member> map = new LinkedHashMap<>();
+}

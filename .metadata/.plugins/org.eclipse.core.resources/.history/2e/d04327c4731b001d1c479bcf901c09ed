@@ -1,0 +1,10 @@
+package model;
+
+public class Teacher extends Member {
+	
+	private String subject;
+	
+	public Teacher() {
+	}
+	
+}

@@ -11,7 +11,7 @@ public class TestPolymorphism4 {
 		service.add(new Person());
 		service.add(new Rabbit());
 		
-		ArrayList<Object> list = new ArrayList();
+//		ArrayList<Object> list = new ArrayList();
 //		list.add(Object e); // add(Object e) 다형성을 적용했구나
 		
 	}

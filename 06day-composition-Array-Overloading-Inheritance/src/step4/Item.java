@@ -1,10 +1,8 @@
 package step4;
-
 public class Item {
 	private String name;
 	private String maker;
 	private int price;
-	
 	public Item(String name, String maker, int price) {
 		this.name = name;
 		this.maker = maker;

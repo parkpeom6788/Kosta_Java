@@ -1,0 +1,27 @@
+package ch11;
+/*
+ * 스택 수식괄호 일치한지 
+ * 
+ */
+import java.util.Stack;
+
+public class Ex11_3 {
+	
+	public static void main(String[] args) {
+		Stack st = new Stack();
+		
+		String expression = "((3+5*8-2))";
+		System.out.println("expression:" + expression);
+	
+		for(int i=0; i<expression.length();i++) {
+			char ch = expression.charAt(i);
+			
+			if(ch=='(') {
+				st.push(ch+"");
+			} else if(ch==')') {
+				
+			}
+		}
+	
+	}
+}

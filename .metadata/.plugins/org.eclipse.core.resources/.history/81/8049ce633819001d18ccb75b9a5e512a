@@ -1,0 +1,22 @@
+package step5.model;
+
+import java.util.ArrayList;
+
+import step5.test.Product;
+
+public class ProductService {
+	
+	// 하나로 계속써야되므로 인스턴스변수로 선언
+	private ArrayList<Product> list; 
+	public ProductService() {
+		list = new ArrayList<>(); 
+	}
+	public void addProduct(Product product) {
+		list.add(product); // 객체를 0번째부터 차례대로 들어감
+	}
+	public void printAll() {
+		for(int i =0 ; i< list.size(); i++) {
+			System.out.println(list.get(i).toString());
+		}
+	}
+}

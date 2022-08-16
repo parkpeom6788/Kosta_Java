@@ -1,0 +1,48 @@
+package main;
+
+import java.util.ArrayList;
+
+public class SchoolServiceImpl implements SchoolService {
+
+	private ArrayList<Member> list;
+	
+	public SchoolServiceImpl() {
+		list = new ArrayList<Member>();
+	}
+	
+	@Override
+	public int findIndexByTel(String tel) {
+		int index = -1;
+		for(int i=0; i<list.size(); i++) {
+			if(tel.equals(list.get(i).getTel())) {
+				index = i;
+				break;
+			}
+		}
+		return index;
+	}
+	@Override
+	public Member findMemberByTel(String tel) {
+		if(findIndexByTel(tel) != -1) { // -1 이 아니면 있는 것이다. 
+			
+		}
+		return null;
+	}
+
+	@Override
+	public void addMember(Member member) {
+	}
+
+	@Override
+	public void printAll() {
+	}
+
+	@Override
+	public void deleteMemberByTel(String tel) {
+	}
+
+	@Override
+	public void updateMemberByTel(Member member) {
+	}
+	
+}

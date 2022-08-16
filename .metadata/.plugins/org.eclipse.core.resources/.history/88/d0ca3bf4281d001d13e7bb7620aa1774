@@ -1,0 +1,43 @@
+package model.service;
+
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map.Entry;
+
+import model.vo.Member;
+public class SchoolService {
+	private LinkedHashMap<String,Member> map = new LinkedHashMap<>();
+	
+	public boolean checkKey(String tel) {
+		boolean check = false;
+		if(map.containsKey(tel)){
+			return !check;
+		}
+		return check;
+	}
+	public void addMember(Member member) {
+		map.put(member.getTel(), member);
+	}
+	public void printAll() {
+		Iterator<Entry<String, Member>> entrys = map.entrySet().iterator();
+		while(entrys.hasNext()) {
+			Entry<String, Member> entry = entrys.next();
+			System.out.println(entry.getKey() + entry.getValue());
+		}
+	}
+	public Member findMemberByTel(String tel) {
+		if(checkKey(tel) == true) {
+			
+		}
+		return null;
+	}
+
+	public void deleteMemberByTel(String tel) {
+	
+	}
+
+	public void updateMember(Member member) {
+	
+	}
+
+}

@@ -1,0 +1,10 @@
+package main;
+
+public interface SchoolService {
+	
+	public int findIndexByTel(String tel);
+	public int findMemberByTel(String tel);
+	public void addMember(Member member);
+	
+	
+}

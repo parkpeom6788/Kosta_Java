@@ -1,5 +1,4 @@
 package step7;
-
 class Animal{ // super class 부모 클래스 
 	int age = 1;
 	public void eat() {
@@ -13,7 +12,6 @@ class Person extends Animal {
 		System.out.println("study");
 	}
 }
-
 public class TestInheritance1 {
 	public static void main(String[] args) {
 		// 자식 Person 객체를 생성해서 테스트 해본다

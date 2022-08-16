@@ -27,7 +27,6 @@ class D implements Ex3 {
 	}
 }
 class E extends D {
-		
 }
 public class TestInterface4 {
 	public static void main(String[] args) {

@@ -1,0 +1,19 @@
+package step7;
+
+import java.util.StringTokenizer;
+
+public class TestStringTokenizer {
+	
+	public static void main(String[] args) {
+		
+		String info = "짬뽕 탕수육 칭따오맥주 양꼬치";
+		StringTokenizer stk = new StringTokenizer(info); // 구분자를 별도로 주지 않으면 공란을 중심으로 분리
+		
+		// 토큰 - 공백 
+		while(stk.hasMoreTokens()) {
+			System.out.println(stk.nextToken());
+		}
+		System.out.println("*************************");
+		
+	}
+}

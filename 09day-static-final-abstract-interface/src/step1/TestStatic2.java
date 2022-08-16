@@ -5,6 +5,7 @@ package step1;
 class StaticExam2 {
 	int money1; // non-static , instance variable
 	static int money2; // static variable  - 클래스 로딩할때 미리 메모리에 적재됨
+	
 	public void test1() {
 		// non - static method 내부에서 접근 여부를 테스트
 		System.out.println(money1); // 같은 non static 이므로 접근 가능
@@ -21,7 +22,7 @@ class StaticExam2 {
 		// System.out.println(money1);
 		// 아래와 같이 객체 생성해서 접근하면 된다
 		StaticExam2 exam = new StaticExam2();
-		System.out.println(exam.money1);
+		System.out.println(exam.money1); // non-static 접근 
 	}
 }
 public class TestStatic2 {

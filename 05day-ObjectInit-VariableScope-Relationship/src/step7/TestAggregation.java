@@ -16,6 +16,6 @@ public class TestAggregation {
 		System.out.println(c.getSmartPhone().getPrice());
 		// c 객체가 소유한 smartPhone 의 price를 200으로 변경
 		c.getSmartPhone().setPrice(200);
-		System.out.println(c.getSmartPhone().getPrice());
+		System.out.println(c.getSmartPhone().getPrice()); // 200
 	}
 }

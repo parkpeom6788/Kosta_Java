@@ -1,0 +1,11 @@
+package Test;
+
+public class ServiceTest {
+	public static void main(String[] args) {
+		Service service = new Service();
+		service.run(new Eagle());
+		service.run(new Bird());
+		service.run(new AirPlane());
+		service.run(new SuperMan());
+	}
+}

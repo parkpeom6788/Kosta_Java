@@ -1,0 +1,22 @@
+package ch12;
+
+import java.util.ArrayList;
+
+class Tv{
+	
+}
+class Audio{
+	
+}
+public class GenericTest {
+	
+	public static void main(String[] args) {
+		
+		ArrayList<Tv> list = new ArrayList();
+		list.add(new Tv());
+		list.add(new Audio());
+		
+		
+		
+	}
+}

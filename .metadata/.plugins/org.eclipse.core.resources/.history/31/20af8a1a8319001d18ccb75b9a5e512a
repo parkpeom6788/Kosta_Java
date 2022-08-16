@@ -1,0 +1,23 @@
+package step2_test;
+
+class Animal {
+	public void eat() {
+		System.out.println("먹다");
+	}
+}
+class Cat extends Animal {
+	public void eat() {
+		System.out.println("");
+	}
+}
+class Person extends Animal {
+	
+}
+class Car {
+	
+}
+public class TestGeneric {
+	public static void main(String[] args) {
+		
+	}
+}

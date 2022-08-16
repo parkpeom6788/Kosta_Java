@@ -1,0 +1,11 @@
+package model;
+
+public class Teacher extends Member {
+	private String subject;
+
+	public Teacher(String tel,String name,String address, String subject) {
+		super();
+		this.subject = subject;
+	}
+	
+}

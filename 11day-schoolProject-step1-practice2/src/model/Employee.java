@@ -1,9 +1,11 @@
 package model;
 
 public class Employee extends Member {
+	
 	private String department;
-	public Employee(String tel, String name, String address, String department) {
-		super(tel, name, address);
+
+	public Employee(String tel,String name,String address, String department) {
+		super(tel,name,address);
 		this.department = department;
 	}
 	public String getDepartment() {
@@ -14,7 +16,6 @@ public class Employee extends Member {
 	}
 	@Override
 	public String toString() {
-		return "Employee : " + super.toString() +  " [department=" + department + "]";
+		return "Employee : " + super.toString() + " department : " + department + "]";
 	}
-	
 }

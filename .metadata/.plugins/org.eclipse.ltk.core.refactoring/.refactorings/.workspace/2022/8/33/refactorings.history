@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;11day_List-Generic&apos; to &apos;11day-List-Generic&apos;" description="Rename resource &apos;11day_List-Generic&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/11day_List-Generic" name="11day-List-Generic" stamp="1660182208116" updateReferences="true"/>
+</session>

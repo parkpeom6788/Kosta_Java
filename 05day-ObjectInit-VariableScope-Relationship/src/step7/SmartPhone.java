@@ -1,5 +1,6 @@
 package step7;
 
+// SmartPhone 먼저 생성 
 public class SmartPhone {
 	private String model;
 	private int price;

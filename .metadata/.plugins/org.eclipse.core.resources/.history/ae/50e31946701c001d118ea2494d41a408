@@ -1,0 +1,26 @@
+package ch11;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Ex11_13 {
+	
+	public static void main(String[] args) {
+		
+//		Set set = new TreeSet(); // 정렬되어서 나온다. 범위검색 가능 정렬 필요없음
+		Set set = new HashSet(); // 정렬이 안됨  , 정렬이 필요함 
+		
+		for(int i=0; set.size() < 6;i++) {
+			
+			int num = (int)(Math.random()*45)+1;
+			set.add(new Test()); // set.add(new Integer(num));
+		}
+		System.out.println(set);
+	}
+}
+class Test {  // set.add()는 비교기준이 있어서 정렬을 하는데 비교기준이 없으면 에러가 생긴다 
+	
+}
+class TestComp implements Comparator {
+	
+}

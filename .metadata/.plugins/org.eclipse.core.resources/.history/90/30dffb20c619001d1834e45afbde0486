@@ -1,0 +1,8 @@
+package model;
+
+public class SchoolService {
+	
+	public void addMember(Member member) {
+		
+	}
+}

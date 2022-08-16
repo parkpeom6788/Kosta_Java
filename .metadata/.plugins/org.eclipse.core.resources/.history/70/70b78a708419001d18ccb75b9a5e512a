@@ -1,0 +1,10 @@
+package step3_test;
+
+import java.util.ArrayList;
+
+public class TestList3 {
+	public static void main(String[] args) {
+		ArrayList<Product> list = new ArrayList<>();
+		
+	}
+}

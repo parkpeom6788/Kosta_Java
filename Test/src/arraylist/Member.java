@@ -36,13 +36,11 @@ public class Member implements Comparable<Member> {
 		}
 		return false;
 	}
-	
 	@Override
 	// hashSet 오름차순
 	public int compareTo(Member member) {
 		return (this.memberId - member.getMemberId()); // 양수 시 오름차순
 	}
-	
 	@Override
 	public String toString() {
 		return memberId + " " + memberName; 

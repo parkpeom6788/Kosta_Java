@@ -19,6 +19,7 @@ public class SchoolServiceImpl implements SchoolService {  // Impl 은 구현체
 				list.add(member);
 			}
 	}
+	
 	// 모두 출력
 	@Override
 	public void printAll() {
@@ -26,6 +27,7 @@ public class SchoolServiceImpl implements SchoolService {  // Impl 은 구현체
 			System.out.println(list.get(i).toString());
 		}
 	}
+	
 	/*
 	  구성원 검색 메서드
 	  매개변수로 전달된 tel에 해당하는 구성원 객체를 반환하는 메서드
@@ -36,7 +38,7 @@ public class SchoolServiceImpl implements SchoolService {  // Impl 은 구현체
 	 */
 	@Override
 	public Member findMemberByTel(String tel) {
-		Member member = null; // 없으면 null 반환
+		Member member = null; // 없으면 null 반환 ( 처음부터 null 로 지정 -> 있으면 list.get(i) 
 		for(int i=0; i<list.size();i++) {
 			if(tel.equals(list.get(i).getTel())) { // 전달받은 tel 과 리스트 구성원의 tel이 일치하면
 				member = list.get(i);
@@ -67,7 +69,7 @@ public class SchoolServiceImpl implements SchoolService {  // Impl 은 구현체
 		}
 	} // method
 	/*
-	 * 학교 구성원 정보를 수정하는 메서드
+	 * 학교 구성원 정보를 수정(set)하는 메서드
 	 * 매개변수로 전달받은 구성원 객체의 tel 이 리스트 요소의 구성원의 tel과 일치하면
 	 * 리스트의 구성원 정보를 업데이트한다 ( tel에 해당하는 구성원 정보가 수정되었습니다 )
 	 * 만약 매개변수의 tel 에 일치하는 리스트 요소가 없다면 
@@ -83,12 +85,14 @@ public class SchoolServiceImpl implements SchoolService {  // Impl 은 구현체
 				break; // 해당 for문을 벗어난다
 			} // if
 		} // for
-	if(updateFlag) { 
-			// true
+	if(updateFlag) {  // true
 			System.out.println(member.getTel() +"tel 에 해당하는 구성원 정보가 수정되었습니다.");
-		} else {
-			// false
+		} else { // false
 			System.out.println(member.getTel() +"tel 에 해당하는 구성원 정보가 없어 수정불가합니다.");
 		}
 	} // method 
+	@Override
+	public int findIndexByTel(String tel) {
+		return 0;
+	}
 } // class

@@ -1,0 +1,15 @@
+package step9_test;
+
+import java.util.HashSet;
+
+public class TestLottoService {
+	
+	public static void main(String[] args) {
+		LottoService service = new LottoService();
+		
+		
+		
+		//service.createLottoNumber()
+		HashSet set = service.createLottoNumber();
+	}
+}

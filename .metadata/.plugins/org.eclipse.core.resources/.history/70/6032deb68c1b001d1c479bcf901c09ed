@@ -1,0 +1,15 @@
+package model;
+
+import main.SchoolService;
+import main.SchoolServiceImpl;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		SchoolService service = new SchoolServiceImpl();
+		
+		
+		
+	}
+}

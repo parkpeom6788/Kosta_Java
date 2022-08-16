@@ -1,0 +1,7 @@
+package model.vo;
+
+public class Student extends Member  {
+	
+	private String stuid;
+	
+}

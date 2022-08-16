@@ -1,0 +1,10 @@
+package model.service;
+
+import java.util.LinkedHashMap;
+
+import model.vo.Member;
+
+public class SchoolService {
+	private LinkedHashMap<String,Member> map = new LinkedHashMap<>();
+		
+}

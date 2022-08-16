@@ -1,0 +1,11 @@
+package ch11;
+
+import java.util.Stack;
+
+public class Ex11_3 {
+	
+	public static void main(String[] args) {
+		
+		Stack st = new Stack();
+	}
+}

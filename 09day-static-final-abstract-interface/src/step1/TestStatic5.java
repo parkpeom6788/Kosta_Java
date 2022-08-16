@@ -2,7 +2,6 @@ package step1;
 
 // static - 공유 정보
 // non-static - 개별 정보
-
 public class TestStatic5 {
 	public static void main(String[] args) {
 		// balance static 이므로 객체 생성없이 접근 가능 

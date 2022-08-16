@@ -12,13 +12,11 @@ public class Person {
 		this.name = name; // 인스턴스 변수(멤버변수) 와 지역변수(매개변수) 를 구분한다 
 		this.age = age;
 	}
-	
 	// 인스턴스 복사 
 	public Person(Person p) {
 		this.name = p.name;
 		this.age = p.age;
 	}
-	
 	// getter / setter 단축키 alt + shift + s 
 	public String getName() {
 		return name;

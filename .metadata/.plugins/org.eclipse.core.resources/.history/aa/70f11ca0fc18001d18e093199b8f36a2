@@ -1,0 +1,9 @@
+package Test;
+
+public class Eagle extends Bird {
+
+	@Override
+	public void fly() { // Flyer 의 추상메서드를 오버라이딩 할수있음 
+		
+	}
+}

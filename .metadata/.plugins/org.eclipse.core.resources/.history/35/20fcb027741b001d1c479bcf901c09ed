@@ -1,0 +1,11 @@
+package model;
+
+public interface SchoolService {
+	
+	public void addMember(Member member);
+	public void printAll();
+	public void findIndexByTel(String tel);
+	public void findMemberByTel(String tel);
+	
+	
+}

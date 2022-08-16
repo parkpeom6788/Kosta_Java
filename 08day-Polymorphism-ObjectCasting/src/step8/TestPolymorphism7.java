@@ -1,5 +1,4 @@
 package step8;
-
 public class TestPolymorphism7 {
 	public static void main(String[] args) {
 		Employee  e = new Employee(1,"아이유",400); // 사원번호 , 사원명 , 월급명
@@ -10,7 +9,6 @@ public class TestPolymorphism7 {
 		// Engineer만 구성되면 service 코드는 바꿀필요가 없다.
 		Engineer en = new Engineer(3,"고슬링",700,"자바",300); // 개발자는 보너스가 있다.
 		service.printInfo(en); // empNo : 3 , name : 고슬링 , salary : 700 , skill : 자바 , bonus : 300
-		
 		// 연봉을 출력해주는 메소드 만들기
 		//  x 12 
 		service.printAnnualSalary(e); // Employee salary * 12

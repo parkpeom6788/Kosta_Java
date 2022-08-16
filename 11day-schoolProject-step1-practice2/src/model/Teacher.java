@@ -1,12 +1,8 @@
 package model;
-
 public class Teacher extends Member {
 	private String subject;
-	
-	public Teacher() {
-	}
-	public Teacher(String tel, String name, String address, String subject) {
-		super(tel, name, address);
+	public Teacher(String tel,String name,String address, String subject) {
+		super(tel,name,address);
 		this.subject = subject;
 	}
 	public String getSubject() {
@@ -17,6 +13,6 @@ public class Teacher extends Member {
 	}
 	@Override
 	public String toString() {
-		return "Teacher : " + super.toString() + "[subject=" + subject + "]";
+		return "Teacher : " + super.toString() + " [subject=" + subject + "]";
 	}
 }

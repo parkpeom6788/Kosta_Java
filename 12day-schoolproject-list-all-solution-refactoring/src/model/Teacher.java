@@ -2,6 +2,7 @@ package model;
 public class Teacher extends Member {
 	// new Student("0101231234", "임상현", "용인", "17"));
 	private String subject;
+	
 	public Teacher() {
 	}
 	public Teacher(String tel,String name,String address, String subject) {

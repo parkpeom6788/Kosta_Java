@@ -1,0 +1,8 @@
+package main;
+
+public class Student {
+	
+	private int no; 			 // 학번
+	private String name;// 이름
+	private int score;		 // 성적
+}

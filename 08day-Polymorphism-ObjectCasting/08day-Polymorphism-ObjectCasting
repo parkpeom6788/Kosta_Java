@@ -33,10 +33,9 @@
  		ex) Animal a = new Person();
  			a.study(); // study메서드는 Animal에는 존재하지 않고 Person에만 존재하는 독립적 멤버
  			위 코드는 컴파일 에러가 난다 
- 			자식의 독자적 멤버에 접근하기 위해서는
+ 			자식의 (독자적 멤버)에 (접근)하기 위해서는
  			Object Down Casting 이 필요하다
  			ex) ((Person))a).study()
- 	
  		- instanceof 연산자 : 객체의 타입을 비교하는 연산자 
 				is a relationship 이 적용되는 true가 반환
 		Animal a = new Person();
@@ -45,14 +44,10 @@
 				sysout(a instanceof Animal); // true
  		
  		**9일차 주요목차**
- 		-static 클래스변수
- 		
- 		- final
- 		
+ 		- static 클래스변수
+ 		- final  (상속못하게,오버라이딩못하게,숫자변경못하게) 
  		- abstract *예습*
- 		 
  		- interface *예습*
- 		
  		복습 코드 : step8 예제 
  		복습 개념 : Object Oriented , Encapsulation , Inheritance , Polymorphism
  						Overloading 과 Overriding

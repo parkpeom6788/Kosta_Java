@@ -1,0 +1,15 @@
+package model.vo; // vo : Value Object	
+
+public abstract class Member { // 직접 객체화 하지못하게 abstract 선언 
+	private String tel;
+	private String name;
+	private String address;
+	
+	public Member(String tel, String name, String address) {
+		this.tel = tel;
+		this.name = name;
+		this.address = address;
+	}
+	
+	
+}

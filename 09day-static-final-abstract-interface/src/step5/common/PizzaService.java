@@ -1,8 +1,6 @@
 package step5.common;
 // 하나 이상의 abstract method 가 있는 클래스는
-// abstract class로 선언되어야 한다 -> 직접 객체화 될 수 없고 부모 역할에 집중 
-public abstract class PizzaService {
-	
+public abstract class PizzaService {  // abstract class로 선언되어야 한다 -> 직접 객체화 될 수 없고 부모 역할에 집중 
 	// protected 는 자식에게만 공유 
 	protected  void prepare() { 
 		System.out.println("도우를 만들다");

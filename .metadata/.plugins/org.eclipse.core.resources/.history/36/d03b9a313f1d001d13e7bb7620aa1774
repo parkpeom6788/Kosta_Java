@@ -1,0 +1,13 @@
+package step7;
+
+import java.util.StringTokenizer;
+
+public class TestStringTokenizer {
+	
+	public static void main(String[] args) {
+		
+		String info = "짬뽕 탕수육 칭따오맥주 양꼬치";
+		StringTokenizer stk = new StringTokenizer(info);
+		
+	}
+}

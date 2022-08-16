@@ -1,0 +1,51 @@
+package main;
+
+import java.util.Map;
+
+public class SchoolServiceImpl implements SchoolService {
+
+	private Map<Integer,Student> gradeCard;
+	
+	// 존재하는지 확인하는 메서드
+	@Override
+	public boolean conTainsKeyCheck(int no) {
+		boolean check = false;
+		if(gradeCard.containsKey(no)) {
+			return !check;
+		}
+		return check;
+	}
+	// 학번에 해당하는 학생이 이미 존재 할 경우 추가x 존재하지 않을 경우 학생 추가
+	@Override
+	public void add(Student student) {
+		if(conTainsKeyCheck(student.getNo())) 
+			System.out.println("이미 존재하는 학생입니다.");
+		else 
+			System.out.println("추가 하였습니다.");
+			gradeCard.put(student.getNo(), student);
+	}
+	@Override
+	public void delete(int no) {
+		if(conTainsKeyCheck(no)) {
+			gradeCard.remove(no);
+		}
+		else 
+			System.out.println("존재하지 않습니다.");
+	}
+	@Override
+	public void update(int no, int score) {
+		if(conTainsKeyCheck(no)) {
+			gradeCard.get(no).setScore(score);
+		}
+	}
+	@Override
+	public void getMaxGradeStudent() {
+	
+	}
+
+	@Override
+	public void getStudents() {
+	
+	}
+
+}

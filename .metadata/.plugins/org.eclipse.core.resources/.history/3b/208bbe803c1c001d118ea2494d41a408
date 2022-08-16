@@ -1,0 +1,9 @@
+package model;
+
+import java.util.Scanner;
+
+public class Application {
+	private static Scanner sc;
+	private SchoolService service = new SchoolServiceImpl();
+	
+}

@@ -4,8 +4,7 @@ public class Member {
 	private String tel;
 	private String name;
 	private String address;
-	public Member() {
-	}
+	public Member() {}
 	public Member(String tel, String name, String address) {
 		super();
 		this.tel = tel;

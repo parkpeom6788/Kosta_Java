@@ -1,13 +1,14 @@
 package step9_test;
 
+import java.util.HashSet;
 import java.util.Random;
-import java.util.TreeSet;
 public class LottoService {
-	public TreeSet<Integer> createLottoNumber() {
-		TreeSet<Integer> set = new TreeSet<Integer>();
+	public HashSet<Integer> createLottoNumber() {
+		Random r = new Random();
+		HashSet<Integer> set = new HashSet<Integer>();
+		
 		while(set.size() < 6) {
-			int number = (int)(Math.random()*45)+1;
-			set.add(number);
+			set.add(r.nextInt(45)+1);
 		}
 		return set;
 	}

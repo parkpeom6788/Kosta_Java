@@ -1,0 +1,17 @@
+package step3;
+
+public class Product {
+	private int id;
+	private String name;
+	private String maker;
+	private int price; // 22억 이면 long
+	
+	public Product(int id, String name, String maker, int price) {
+		this.id = id;
+		this.name = name;
+		this.maker = maker;
+		this.price = price;
+	}
+	
+	
+}

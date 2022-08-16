@@ -1,0 +1,38 @@
+package step2_test;
+
+import java.util.ArrayList;
+
+class Animal {
+	public void eat() {
+		System.out.println("먹다");
+	}
+}
+class Cat extends Animal {
+	public void eat() {
+		System.out.println("");
+	}
+}
+class Person extends Animal {
+	
+}
+class Car {
+	
+}
+public class TestGeneric {
+	public static void main(String[] args) {
+		// Generic : 타입의 안정성을 보장 , 객체 캐스팅 절차를 감소
+		// Generic 을 사용하지 않은 경우의 예
+		
+		/*
+		 * ArrayList animalList = new ArrayList();
+		 * animalList.add(new Animal());
+		 * 
+		 * 
+		 */
+		ArrayList<Animal> animal = new ArrayList<Animal>();
+		animal.add(new Animal());
+		
+		
+		
+	}
+}

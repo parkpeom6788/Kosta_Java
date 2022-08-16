@@ -1,10 +1,13 @@
 package model;
 import java.util.ArrayList;
 public class SchoolService {
+	
 	private ArrayList<Member> list;
+	
 	public SchoolService() {
 		list = new ArrayList<Member>();
 	}
+	// 추가하기 
 	public void addMember(Member member) {
 		boolean flag = true;
 		for(int i = 0; i < list.size(); i++) {
@@ -18,7 +21,7 @@ public class SchoolService {
 				list.add(member);
 			}
 	}
-	// 모두 출력
+	// 모두출력
 	public void printAll() {
 		for(int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i).toString());
@@ -32,6 +35,8 @@ public class SchoolService {
 	  tel에 해당하는 구성원 정보가 리스트에 존재할 경우에는
 	  해당 구성원 객체의 주소값을 호출한 측으로 반환
 	 */
+	
+	// 구성원 검색 
 	public Member findMemberByTel(String tel) {
 		Member member = null; // 없으면 null 반환
 		for(int i=0; i<list.size();i++) {
@@ -48,6 +53,8 @@ public class SchoolService {
 	 * 만약 tel에 해당하는 구성원 정보가 리스트에 존재하지 않으면
 	 * tel에 해당하는 구성원 정보가 없어 삭제 불가합니다 메세지를 출력합니다.
 	 */
+	
+	// 구성원 삭제 
 	public void deleteMemberByTel(String tel) {
 		boolean deleteFlag = false;
 		for(int i=0; i<list.size(); i++) {
@@ -69,6 +76,8 @@ public class SchoolService {
 	 * 만약 매개변수의 tel 에 일치하는 리스트 요소가 없다면 
 	 * tel에 해당하는 구성원 정보가 없어 수정불가합니다
 	 */
+	
+	// 구성원 수정 
 	public void updateMember(Member member) {
 		boolean updateFlag = false;
 		for(int i=0; i<list.size(); i++) {

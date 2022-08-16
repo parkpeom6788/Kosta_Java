@@ -14,8 +14,8 @@ public class SchoolServiceImplVer2 implements SchoolService {
 	 */
 	@Override
 	public int findIndexByTel(String tel) {
-		int position = -1;
-		for(int i = 0; i < list.size(); i++) {
+		int position = -1; // 처음부터 없으면 -1 
+		for(int i = 0; i < list.size(); i++) { // 찾으면 
 			if(tel.equals(list.get(i).getTel())) {
 				position = i;
 				break;
@@ -24,9 +24,16 @@ public class SchoolServiceImplVer2 implements SchoolService {
 		return position;
 	}
 	@Override
+	public Member findMemberByTel(String tel) {
+		int index = findIndexByTel(tel);
+		if(index == -1) 
+			return null;
+		else 
+			return list.get(index);
+	}	
+	@Override
 	public void addMember(Member member) {
-		int position = findIndexByTel(member.getTel());
-		if(position == -1) {
+		if(findIndexByTel(member.getTel()) == -1) {
 			list.add(member);
 		} else {
 			System.out.println("중복");
@@ -42,14 +49,6 @@ public class SchoolServiceImplVer2 implements SchoolService {
 			System.out.println(list.get(i));
 		}
 	}
-	@Override
-	public Member findMemberByTel(String tel) {
-		int index = findIndexByTel(tel);
-		if(index == -1) 
-			return null;
-		else 
-			return list.get(index);
-	}	
 	@Override
 	public void deleteMemberByTel(String tel) {
 		int index = findIndexByTel(tel);

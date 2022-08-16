@@ -1,0 +1,8 @@
+package Test;
+
+public class Service {
+	
+	public void run(Flyer f) {
+		f.fly();
+	}
+}

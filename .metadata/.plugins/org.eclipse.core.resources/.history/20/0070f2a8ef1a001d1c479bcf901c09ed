@@ -1,0 +1,37 @@
+package testmain;
+import java.util.Scanner;
+
+import model.SchoolService;
+import model.SchoolServiceImpl;
+
+public class Main {
+	private SchoolService service;
+	private Scanner sc;
+	public Main() {
+		service = new SchoolServiceImpl();
+		sc = new Scanner(System.in);
+		choice();
+	}
+	public void choice() {
+		do {
+			show();
+			int number = sc.nextInt();
+			
+			switch(number) {
+			
+			}
+			
+		}while(true);
+	}
+	public void show() {
+		System.out.println("1. 추가 2. 검색 3. 삭제 4. 수정 5. 종료 ");
+	}
+	public void print(String message) {
+		String msg = message;
+		System.out.print(msg + " :  ");
+	}
+	
+	public static void main(String[] args) {
+		new Main();
+	}
+}

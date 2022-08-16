@@ -1,0 +1,9 @@
+package step3_test;
+
+public class Product {
+	private int id;
+	private String name;
+	private String maker;
+	private int price;
+	
+}

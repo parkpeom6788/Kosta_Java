@@ -1,16 +1,14 @@
 package model;
-
 public class Member {
 	private String tel;
 	private String name;
 	private String address;
-	
+	public Member() {
+	}
 	public Member(String tel, String name, String address) {
 		this.tel = tel;
 		this.name = name;
 		this.address = address;
-	}
-	public Member() {
 	}
 	public String getTel() {
 		return tel;

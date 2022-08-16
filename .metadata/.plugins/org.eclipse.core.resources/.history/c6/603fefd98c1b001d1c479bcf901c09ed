@@ -1,0 +1,14 @@
+package model;
+
+import main.SchoolService;
+import main.SchoolServiceImpl;
+import main.Student;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		SchoolService service = new SchoolServiceImpl();
+		service.addMember(new Student("01012341234", "김모씨", "서울", "100"));
+		
+	}
+}

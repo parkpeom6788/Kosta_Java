@@ -1,0 +1,9 @@
+package model;
+
+public class SchoolService {
+	
+	public void addMember(Member member) { // UML -> +addMember(member : Member) 로 표시
+		
+		
+	}
+}

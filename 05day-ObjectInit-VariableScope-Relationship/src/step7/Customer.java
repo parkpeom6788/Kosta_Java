@@ -1,6 +1,5 @@
 package step7;
 // Aggregation 관계
-	
 public class Customer {
 	private String name;
 	// aggregation : has a 관계 고객이 스마트폰을 소유하다

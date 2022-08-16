@@ -1,21 +1,18 @@
 package model;
-
-public class Student extends Member {
-	
-	private String stuId;
-	
-	public Student(String tel, String name, String address, String stuId) {
-		super(tel, name, address);
-		this.stuId = stuId;
+public class Student extends Member  {
+	private String stuid;
+	public Student(String tel,String name,String address, String stuid) {
+		super(tel,name,address);
+		this.stuid = stuid;
 	}
-	public String getStuId() {
-		return stuId;
+	public String getStuid() {
+		return stuid;
 	}
-	public void setStuId(String stuId) {
-		this.stuId = stuId;
+	public void setStuid(String stuid) {
+		this.stuid = stuid;
 	}
 	@Override
 	public String toString() {
-		return "Student : " + super.toString() + " [stuId=" + stuId + "]";
+		return "Student : " + super.toString() + " [stuid=" + stuid + "]";
 	}
 }

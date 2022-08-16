@@ -1,0 +1,13 @@
+package model;
+
+import java.util.ArrayList;
+
+public interface SchoolService {
+	
+	public int indexByTel(String tel);
+	
+	public void findmemberByTel(String tel);
+	
+	
+	
+}

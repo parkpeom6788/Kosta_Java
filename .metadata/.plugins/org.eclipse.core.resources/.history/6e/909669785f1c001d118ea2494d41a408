@@ -1,0 +1,14 @@
+package ch11;
+
+import java.util.Arrays;
+
+public class Ex11_7 {
+	
+	public static void main(String[] args) {
+		
+		String[] strArr = {"cat","Dog","lion","tiger"};
+		
+		Arrays.sort(strArr);
+		System.out.println("strArr = " + Arrays.sort(strArr));
+	}
+}

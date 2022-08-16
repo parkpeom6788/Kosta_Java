@@ -1,0 +1,11 @@
+package step6;
+
+public class TestQueue {
+	
+	public static void main(String[] args) {
+		
+		// Queue 자료구조의 특징 : FIFO (First In , First Out) 
+		Queue<String> queue = new LinkedList<String>();
+		
+	}
+}

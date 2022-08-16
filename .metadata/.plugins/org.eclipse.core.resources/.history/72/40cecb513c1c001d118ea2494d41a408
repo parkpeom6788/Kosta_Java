@@ -1,0 +1,12 @@
+package model;
+
+public interface SchoolService {
+	
+	public boolean conTainsKeyCheck(int no);
+	public void add(Student student); // create
+	public void delete(int no); // delete
+	public void update(int no,Student student); // update
+	public void getMaxGradeStudent();
+	
+	
+}

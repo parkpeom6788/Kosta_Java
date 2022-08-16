@@ -1,0 +1,17 @@
+package ch12;
+
+import java.util.ArrayList;
+
+class Product2 {}
+class Tv2 extends Product {}
+class Audio2 extends Product {}
+
+public class Ex12_1 {
+	
+	public static void main(String[] args) {
+		
+		ArrayList<Product> productList = new ArrayList<Product>();
+		ArrayList
+		
+	}
+}

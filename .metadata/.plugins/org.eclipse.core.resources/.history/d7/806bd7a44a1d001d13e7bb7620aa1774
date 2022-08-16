@@ -1,0 +1,12 @@
+package model.vo;
+
+public class Student extends Member  {
+	
+	private String stuid;
+
+	public Student(String tel, String name, String address, String stuid) {
+		super(tel, name, address);
+		this.stuid = stuid;
+	}
+	
+}

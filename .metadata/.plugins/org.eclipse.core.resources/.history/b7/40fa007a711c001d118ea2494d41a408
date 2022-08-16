@@ -1,0 +1,17 @@
+package ch11;
+
+import java.util.TreeSet;
+
+public class Ex11_14 {
+	
+	public static void main(String[] args) {
+		TreeSet set = new TreeSet();
+		String from = "b";
+		String to = "d";
+		
+		set.add("abc"); set.add("alien"); set.add("bat");
+		set.add("Car"); set.add("car"); set.add("disc");
+		
+	
+	}
+}

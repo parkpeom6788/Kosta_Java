@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\fight\Desktop\12day\11day-schoolProject-list-soluction"/>
+			<item value="C:\Users\fight\Desktop\12day\12day-schoolproject-list-all-solution-refactoring_test"/>
+			<item value="C:\Users\fight\Desktop\12day\12day-schoolproject-list-all-solution-refactoring"/>
+			<item value="C:\Users\fight\Desktop\12day\12day-schoolproject-list-all-solution-inst"/>
+			<item value="C:\Users\fight\Desktop\새 폴더\Test"/>
+			<item value="C:\Users\fight\Desktop\새 폴더\11day-schoolProject-step1-practice2"/>
+			<item value="C:\Users\fight\Desktop\새 폴더\11day-schoolProject-step1-practice1-soluction"/>
+			<item value="C:\Users\fight\Desktop\새 폴더\11day-schoolProject-step1-practice"/>
+			<item value="C:\Users\fight\Desktop\10day-Interface-Collection-Set"/>
+			<item value="C:\Users\fight\Desktop\09day-static-final-abstract-interface"/>
+			<item value="C:\Users\fight\Desktop\07day-Inheritance-Polymorphism"/>
+			<item value="C:\Users\fight\Desktop\06day-composition-Array-Overloading-Inheritance"/>
+			<item value="C:\Users\fight\Desktop\05day-ObjectInit-VariableScope-Relationship"/>
+			<item value="C:\Users\fight\Desktop\04day-DataType-if-for"/>
+			<item value="C:\Users\fight\Desktop\kosta-java-main\se-workspace\03day-Encapsulation-Constructor"/>
+			<item value="C:\Users\fight\Desktop\kosta-java-main\se-workspace\02day-OOP-basic-syntax"/>
+			<item value="C:\Users\fight\Desktop\kosta-java-main\se-workspace\01day-basic"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="941"/>
+		<item key="DIALOG_Y_ORIGIN" value="337"/>
+		<item key="DIALOG_WIDTH" value="700"/>
+		<item key="DIALOG_HEIGHT" value="711"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="217"/>
+		<item key="DIALOG_Y_ORIGIN" value="467"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+</section>

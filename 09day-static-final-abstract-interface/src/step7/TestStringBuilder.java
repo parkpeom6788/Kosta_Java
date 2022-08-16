@@ -9,5 +9,9 @@ public class TestStringBuilder {
 		System.out.println(name); // 아이유 가수 , 문자열 자체가 변경 ( 가변 ) 
 		System.out.println();
 		
+		StringBuilder name2 = new StringBuilder("아이유");
+		System.out.println(name2.append("짱"));
+		System.out.println(name2.append("짱짱짱"));
+		System.out.println();
 	}
 }

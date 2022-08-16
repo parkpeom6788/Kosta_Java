@@ -1,0 +1,17 @@
+package model;
+
+import java.util.ArrayList;
+
+public class SchoolService {
+	ArrayList<Member> list;
+	public SchoolService() {
+		list = new ArrayList<Member>();
+	}
+	public void addMember(Member member) { // UML -> +addMember(member : Member) 로 표시
+		
+	}
+	
+	public void printAll() {
+		
+	}
+}

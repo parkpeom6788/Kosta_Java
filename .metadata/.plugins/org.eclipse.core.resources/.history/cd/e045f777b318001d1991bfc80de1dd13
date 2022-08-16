@@ -1,0 +1,10 @@
+package step9_test;
+
+import java.util.HashSet;
+public class LottoService {
+	
+	public HashSet<Integer> createLottoNumber() {
+		
+		
+	}
+}

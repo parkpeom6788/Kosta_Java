@@ -1,0 +1,10 @@
+package ch11;
+
+public class Ex11_7 {
+	
+	public static void main(String[] args) {
+		
+		String[] strArr = {"cat","Dog","lion","tiger"};
+		
+	}
+}

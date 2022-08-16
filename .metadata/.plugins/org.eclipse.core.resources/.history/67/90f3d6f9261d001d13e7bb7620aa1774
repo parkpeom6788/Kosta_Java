@@ -1,0 +1,34 @@
+package model.service;
+
+import java.util.LinkedHashMap;
+
+import model.vo.Employee;
+import model.vo.Member;
+import model.vo.Student;
+import model.vo.Teacher;
+public class SchoolService {
+	private LinkedHashMap<String,Member> map = new LinkedHashMap<>();
+
+	public void addMember(Member member) {
+		
+	}
+
+	public void printAll() {
+		
+	}
+
+	public Member findMemberByTel(String tel) {
+		return null;
+	}
+
+	public void deleteMemberByTel(String tel) {
+	}
+
+	public void updateMember(Teacher teacher) {
+	
+	}
+
+	public void updateMember(Employee employee) {
+	
+	}	
+}

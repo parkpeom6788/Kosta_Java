@@ -1,0 +1,92 @@
+package model;
+import java.util.ArrayList;
+public class SchoolService {
+	
+	private ArrayList<Member> list;
+	
+	public SchoolService() {
+		list = new ArrayList<Member>();
+	}
+	// 추가하기 
+	public void addMember(Member member) {
+		boolean flag = true;
+		for(int i = 0; i < list.size(); i++) {
+			if(member.getTel().equals(list.get(i).getTel())) {
+				System.out.println(member.getTel() + "이 중복되어 추가될수 없습니다.");
+				flag = false;
+				break;
+			}
+		}
+			if(flag == true) {
+				list.add(member);
+			}
+	}
+	// 모두출력
+	public void printAll() {
+		for(int i = 0; i < list.size(); i++) {
+			System.out.println(list.get(i).toString());
+		}
+	}
+	/*
+	  구성원 검색 메서드
+	  매개변수로 전달된 tel에 해당하는 구성원 객체를 반환하는 메서드
+	  만약 전달받은 tel에 해당하는 구성원이 리스트에 존재하지 않을 경우에는 
+	  null을 반환
+	  tel에 해당하는 구성원 정보가 리스트에 존재할 경우에는
+	  해당 구성원 객체의 주소값을 호출한 측으로 반환
+	 */
+	public Member findMemberByTel(String tel) {
+		Member member = null; // 없으면 null 반환
+		for(int i=0; i<list.size();i++) {
+			if(tel.equals(list.get(i).getTel())) { // 전달받은 tel 과 리스트 구성원의 tel이 일치하면
+				member = list.get(i);
+				break;
+			}
+		}
+		return member;
+	}
+	/*학교 구성원 정보를 삭제하는 메서드
+	 * 매개변수로 전달된 tel 에 해당하는 구성원이 리스트에 존재하면
+	 * 해당 구성원을 삭제한다 ( 삭제시에는 tel에 해당하는 구성원 정보를 삭제하였습니다 메세지)
+	 * 만약 tel에 해당하는 구성원 정보가 리스트에 존재하지 않으면
+	 * tel에 해당하는 구성원 정보가 없어 삭제 불가합니다 메세지를 출력합니다.
+	 */
+	public void deleteMemberByTel(String tel) {
+		boolean deleteFlag = false;
+		for(int i=0; i<list.size(); i++) {
+			if(tel.equals(list.get(i).getTel())) {
+				list.remove(i);
+				System.out.println(tel + " tel 에 해당하는 구성원 정보가 삭제되었습니다.");
+				deleteFlag = false;
+				break;
+			} // if
+		} // for
+		if(deleteFlag == false) {
+			System.out.println(tel +" tel에 해당하는 구성원 정보가 없어서 삭제 불가능 합니다");
+		}
+	} // method
+	/*
+	 * 학교 구성원 정보를 수정하는 메서드
+	 * 매개변수로 전달받은 구성원 객체의 tel 이 리스트 요소의 구성원의 tel과 일치하면
+	 * 리스트의 구성원 정보를 업데이트한다 ( tel에 해당하는 구성원 정보가 수정되었습니다 )
+	 * 만약 매개변수의 tel 에 일치하는 리스트 요소가 없다면 
+	 * tel에 해당하는 구성원 정보가 없어 수정불가합니다
+	 */
+	public void updateMember(Member member) {
+		boolean updateFlag = false;
+		for(int i=0; i<list.size(); i++) {
+			if(member.getTel().equals(list.get(i).getTel())) {
+				list.set(i, member); // list i index에 요소를 업데이트 
+				updateFlag = true;
+				break; // 해당 for문을 벗어난다
+			} // if
+		} // for
+	if(updateFlag) { 
+			// true
+			System.out.println(member.getTel() +"tel 에 해당하는 구성원 정보가 수정되었습니다.");
+		} else {
+			// false
+			System.out.println(member.getTel() +"tel 에 해당하는 구성원 정보가 없어 수정불가합니다.");
+		}
+	} // method 
+} // class

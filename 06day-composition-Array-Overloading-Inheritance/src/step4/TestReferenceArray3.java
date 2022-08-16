@@ -10,7 +10,6 @@ public class TestReferenceArray3 {
 				new Item("비빔면","팔도",1200),
 				new Item("짜파게티","농심",800),
 		};
-		
 		// 정보를 전달함 
 		ItemService service = new ItemService(items); // 아이템을 관리함
 		service.printNameAll();

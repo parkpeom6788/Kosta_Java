@@ -1,0 +1,24 @@
+package step2_test;
+
+class Animal {
+	public void eat() {
+		System.out.println("먹다");
+	}
+}
+class Cat extends Animal {
+	public void eat() {
+		System.out.println("");
+	}
+}
+class Person extends Animal {
+	
+}
+class Car {
+	
+}
+public class TestGeneric {
+	public static void main(String[] args) {
+		// Generic : 타입의 안정성을 보장 , 객체 캐스팅 절차를 감소
+		
+	}
+}

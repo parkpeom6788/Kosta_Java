@@ -1,0 +1,10 @@
+package ch11;
+
+public class Ex11_18 {
+	
+	public static void main(String[] args) {
+		
+		String[] data = {"A","K","A","K","D","K","A","K","K","K"};
+		
+	}
+}

@@ -1,0 +1,11 @@
+package ch11;
+
+import java.util.TreeSet;
+
+public class Ex11_14 {
+	
+	public static void main(String[] args) {
+		
+		TreeSet set = new TreeSet();
+	}
+}

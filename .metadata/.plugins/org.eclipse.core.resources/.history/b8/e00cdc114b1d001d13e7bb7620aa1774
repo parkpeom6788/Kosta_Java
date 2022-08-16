@@ -1,0 +1,5 @@
+package model.vo;
+
+public class Teacher extends Member {
+	
+}

@@ -20,6 +20,5 @@ public class TestPolymorphism1 {
 		a3.eat(); // 오버라이딩된 Rabbit의 eat 메서드 실행 
 		// 자식 객체를 부모 타입의 변수로 참조시켜 보는 연습을 하는 이유는 step2예제에서 확인
 		
-		
 	}
 }
