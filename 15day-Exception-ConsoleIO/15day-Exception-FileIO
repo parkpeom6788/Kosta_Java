@@ -1,0 +1,14 @@
+**15일차 주요목차**
+- Exception Handling 예외처리 review
+- schoolproject exception handling 적용 -> List , Map 으로 자기가 만들어보기 
+- java.io.File class를 이용한 파일 제어 
+
+- Exception Handling ( 예외 처리 ) review
+: 프로그램 실행시 예외 Exception 이 발생 할때 대처방안을 실행하고 프로그램 정상 수행 ( 예외 처리 Exception Handling 를 하지 않으면 즉시 종료 )
+
+try : 예외 발생예상영역 지점 
+catch  : 예외를 처리한다 
+finally : 예외 발생 및 처리 여부와 관계없이 항상 실행
+throws : 호출한 측으로 예외를 던질 수 있다 ( 전파할 수 있다 )
+throw : 필요시 예외를 고의로 발생 시킨다 
+
