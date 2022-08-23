@@ -1,0 +1,25 @@
+**17일차 주요목차**
+- java.io.File
+
+-InputStream / OutputStream , Reader / Writer 
+------------------------------------------------------
+- IO : 입출력
+	Stream : 입출력을 위한 장치 ( 관 , 파이프라인 , 빨대 ...)
+				사전적 의미 - 줄기, 시냇물 
+				
+	4가지 IO Abstract class 
+				ByteStream(1byte)	CharacterStream(2byte)	
+				이미지동영상음원		다국어	
+	입력		InputStream			Reader
+	출력		OutputStream			Writer
+		
+	NodeStream 계열 : 직접 장치에 연결되는 스트림 ( 필수적 ) 
+								ex )  FileReader , FileOutputStream
+	ProcessingStream 계열 :	 기존 스트림에 연결되어 다양한 기능을 지원하는 스트림 계열 ( 필수적에 연결됨 ) 
+								ex ) BufferedReader , BufferedOutputStream	
+								
+				왜 나누나 ? 재사용성을 높이려고 
+								
+	
+	
+	
