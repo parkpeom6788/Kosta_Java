@@ -1,0 +1,58 @@
+**21day-2-Network**
+
+Java 기반 TCP/IP 네트워크 프로그래밍
+
+Protocal : 프로토콜 , 약속 , 통신규약 200 이라는 값 => 정상 수행 , 404 => 없는 값  , 500 => 서버 에러 
+
+TCP/IP : 인터넷 통신 규약 
+
+TCP : Transmission Control Protocol 전송을 제어 프로토콜 -> 데이터 전달 보증 
+IP : Internet Protocol  IP Address 집주소,전화번호 같은거 ->  내 아이피 -> 192.168.56.1 (명령 프롬프트에서 ipconfig 로 확인 )
+																								자신의 컴퓨터 IP 127.0.0.1
+	DNS (Domain Name System ) -> www.google.com 아이피와 연결이됨
+													사용자 접근성 높이기 위해 ip에 연결된 Domain Name를 사용한다
+													자신의 컴퓨터 도메인 네임 localhost 
+	
+	Port : 포트 , 서비스 번호(입구) , 가상의 연결단위 
+				http://127.0.0.1:8888
+				http -> protocal
+				127.0.0.1 -> ip
+				8888 -> port 
+				
+				일반적으로 사용하는 웹 port인 80 port는 생략 가능 	
+	Socket : 네트워크 연결의 양끝단위 ( end point ) 로서 통신을 위한 인터페이스를 의미 
+				( ex - 전화기 )
+				Client 의 예
+				Socket(server IP , port )
+				socket.getOutputStream() => 서버로 출력하기 위한 스트림 
+				socket.getInputStream() => 서버에서 입력받기 위한 스트림 
+											
+	ServerSocket : 서버에서 생성하는 서버소켓
+							클라이언트의 접속을 대기하다 클라이언트가 접속하면 실행 
+							대표전화의 역할 , 접수처의 역할을 함							
+							accept() : 리턴타입이 Socket  => 클라이언트의 접속을 대기하다 클라이언트가 접속하면 실행
+											일반소켓을 리턴해준다
+											이 일반소켓이 클라이언트와 통신하게 된다
+							ex) Server의 예
+							
+							ServerSocket(port)
+							접속하는 클라이언트마다 반복문을 돌려줘야 함
+							serverSocket.accept() : Socket
+							socket.getInputStream();
+							socket.getOutputStream();
+step1 서버는 대기하다가
+		클라이언트가 접속하면 그 클라이언트에게 메세지를 출력
+		
+		클라이언트는 서버로 데이터를 출력							
+							
+step2 서버는 다수의 클라이언트가 접속하면 순차적으로 메세지를 출력하도록 한다 
+		클라이언트는 기존 step1과 동일하다 							
+							
+							
+							
+															
+	
+	
+						
+
+
